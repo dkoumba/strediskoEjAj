@@ -8,3 +8,4 @@ Domény: [strediskoai.sk](https://strediskoai.sk), [strediskoejaj.sk](https://st
 ## Dokumenty
 
 - [Research – čo ponúkať, od koho nakupovať, ceny, platby, právo](docs/01-research.md)
+- [Presný postup od založenia s.r.o. po spustenie](docs/02-postup-od-zalozenia-po-spustenie.md)

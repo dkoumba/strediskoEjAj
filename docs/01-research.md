@@ -301,7 +301,7 @@ nastavením. Súčasne sa prihlásiť do Suno partner programu.
 | Položka | Suma |
 |---|---|
 | Cena pre zákazníka (s DPH) | 9,90 € |
-| − DPH 23 % (ak sme platitelia) | −1,85 € |
+| − DPH 23 % (len ak sme platitelia; na začiatku nebudeme – pozri postup, kap. 0) | −1,85 € |
 | − Stripe (1,5 % + 0,25 €, EHP karta) | −0,40 € |
 | − AI náklad (2 verzie × Lyria + text) | −0,17 € |
 | − e‑mail / SMS / úložisko | −0,05 € |
