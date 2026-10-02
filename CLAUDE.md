@@ -77,4 +77,7 @@ odkazom, výsledok príde e‑mailom/SMS.
 - API kľúče a heslá nikdy do kódu ani do chatu – len premenné prostredia
   (`.env.local` v `.gitignore`, Vercel env).
 - Vývojová vetva: `claude/busy-goldberg-b30nws`.
+- Práca beží v Claude Code na webe (cloud), lokálny git u majiteľa netreba. Majiteľ
+  oddeľuje projekt od súkromných účtov profilom v prehliadači + projektovým e‑mailom
+  (postup 02, krok 1.0).
 - Ceny a právne/daňové údaje sa menia – pri použití uviesť dátum a zdroj, overovať.

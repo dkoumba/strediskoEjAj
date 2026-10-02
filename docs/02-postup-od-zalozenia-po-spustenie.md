@@ -54,6 +54,23 @@ Prešiel som celý research ešte raz. Toto sú závery, ktoré ovplyvňujú pos
 
 Cieľ: nevyhodiť 5 000 € na firmu, ak AI nespieva dobre po slovensky.
 
+### 1.0 👤 Oddeliť projekt od súkromných účtov (hneď na začiatku)
+
+Nový notebook netreba. Stačí oddeliť **identitu**, nie hardvér:
+
+1. **Nový e‑mail len pre projekt** (napr. Gmail `strediskoai…@gmail.com`; po založení
+   firmy prejdeme na `admin@strediskoai.sk`). Na ten zakladaj **všetky** účty projektu
+   (GitHub, Google AI Studio, fal.ai, OpenRouter, Stripe…). Neskôr sa ľahšie prevedú na firmu.
+2. **Samostatný profil v prehliadači** (Chrome/Edge: „Pridať profil“ → „Stredisko“).
+   Každý profil má vlastné prihlásenia, takže súkromný a projektový GitHub/Google sa
+   nebijú a netreba sa stále odhlasovať. Alternatíva: samostatný používateľ vo Windows/macOS.
+3. **GitHub:** projektový repozitár je `dkoumba/strediskoEjAj`. Ak chceš projekt pod iným
+   GitHub účtom, sprav nový účet na projektový e‑mail a repozitár naň **prevedieme**
+   (Settings → Transfer). GitHub vie aj prepínať medzi viacerými prihlásenými účtami.
+4. **Lokálny git na notebooku netreba.** Claude pracuje v cloude (Claude Code na webe)
+   a zmeny posiela priamo na GitHub. Notebook potrebuješ len na prehliadač.
+5. **Správca hesiel** (Bitwarden zadarmo / 1Password) a **2FA** na každom účte projektu.
+
 ### 1.1 👤 Kúp domény (hneď dnes, ~25 €/rok za obe)
 
 - Over voľnosť na [sk-nic.sk](https://sk-nic.sk) (WHOIS) a kúp u slovenského registrátora
