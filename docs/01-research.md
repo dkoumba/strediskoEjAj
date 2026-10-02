@@ -13,9 +13,10 @@
 
 ## 1. Zhrnutie v 10 bodoch
 
-1. **Nápad dáva zmysel.** Vstupné náklady na jeden výstup sú 0,04 – 2 USD, konkurencia
-   pýta 1 € a viac za fotku. Slovenčina + jednoduchosť + jedna stránka pre všetko je reálna
-   odlišnosť – väčšina konkurencie je v angličtine alebo robí len jednu vec.
+1. **Nápad dáva zmysel.** Vstupné náklady na jeden výstup sú 0,04 – 2 USD, slovenská
+   konkurencia pýta za oživenie fotky ~2 – 15 € a za pesničku na mieru **9 – 80 €**
+   (prehľad v kap. 11). Každý konkurent robí len jednu vec – **jedno miesto pre všetko
+   po slovensky** zatiaľ nikto nemá. Pozor: obnovu/vyfarbenie fotky dáva ZonerAI zadarmo.
 2. **Suno nemá oficiálne verejné API.** Všetky „Suno API“ sú neoficiálne obchádzky,
    porušujú podmienky Suno a môžu zo dňa na deň prestať fungovať. Na biznis to nestavať.
    Suno od 1. 7. 2026 zbiera prihlášky partnerov do pripravovaného API – **oplatí sa prihlásiť**.
@@ -70,8 +71,8 @@ cena = návrh predajnej ceny s DPH.
 
 | # | Nástroj (názov dlaždice) | Čím to urobiť | Náklad | Cena (návrh) |
 |---|---|---|---|---|
-| 1 | ★ **Oživ starú fotku** (fotka sa pohne, usmeje, zamáva) | image‑to‑video: Kling 2.6/3.0, Seedance, Hailuo, Wan (fal.ai) | 0,20 – 0,70 USD / 5 s | 2,99 – 3,99 € |
-| 2 | ★ **Oprav starú fotku** (škrabance, lomy, vyblednutie) | Nano Banana Pro „restoration“, fal photo‑restoration | 0,04 – 0,15 USD | 1,49 € |
+| 1 | ★ **Oživ starú fotku** (fotka sa pohne, usmeje, zamáva) | image‑to‑video: Kling 2.6/3.0, Seedance, Hailuo, Wan (fal.ai) | 0,20 – 0,70 USD / 5 s | 1,99 – 2,49 € (balík 5 ks 7,99 €) |
+| 2 | ★ **Oprav starú fotku** (škrabance, lomy, vyblednutie) | Nano Banana Pro „restoration“, fal photo‑restoration | 0,04 – 0,15 USD | 0,99 € / zadarmo k oživeniu (ZonerAI to dáva zadarmo) |
 | 3 | ★ **Vyfarbi čiernobielu fotku** | to isté ako #2 (často v jednom kroku) | 0,04 – 0,15 USD | v cene #2 / 0,99 € |
 | 4 | **Zväčši a zaostri fotku** (na tlač) | upscaler (fal, Replicate – Topaz, Clarity) | 0,01 – 0,10 USD | 0,99 € |
 | 5 | **Spoj ľudí na jednu fotku** (napr. starí rodičia, ktorí sa nestihli odfotiť spolu) | Nano Banana Pro / Seedream edit | 0,04 – 0,15 USD | 2,49 € |
@@ -87,11 +88,11 @@ cena = návrh predajnej ceny s DPH.
 
 | # | Nástroj | Čím to urobiť | Náklad | Cena (návrh) |
 |---|---|---|---|---|
-| 13 | ★ **Pesnička na mieru** (pre koho, príležitosť, pár viet o človeku, štýl: ľudovka, dychovka, šláger, pop, rock) | text: LLM (Claude/Gemini) → hudba: Lyria 3.5 / Mureka / ElevenLabs Music | 0,08 – 0,40 USD (2 verzie na výber) | 4,99 – 6,99 € |
-| 14 | ★ **Narodeninová / meninová pesnička** (šablóna, len meno + vek) | to isté, rýchlejší sprievodca | ~0,10 – 0,20 USD | 3,99 € |
+| 13 | ★ **Pesnička na mieru** (pre koho, príležitosť, pár viet o človeku, štýl: ľudovka, dychovka, šláger, pop, rock) | text: LLM (Claude/Gemini) → hudba: Lyria 3.5 / Mureka / ElevenLabs Music | 0,08 – 0,40 USD (2 verzie na výber) | 9,90 € (konkurencia 19,90 – 45 €) |
+| 14 | ★ **Narodeninová / meninová pesnička** (šablóna, len meno + vek) | to isté, rýchlejší sprievodca | ~0,10 – 0,20 USD | 5,90 € |
 | 15 | **Uspávanka s menom vnúčaťa** | to isté | ~0,10 USD | 3,99 € |
 | 16 | **Zhudobni moju básničku** (vlastný text) | to isté | ~0,10 USD | 3,99 € |
-| 17 | **Svadobná / výročná pesnička** (prémiová, dlhšia, viac verzií) | to isté + ručná kontrola textu | ~0,50 USD | 9,99 € |
+| 17 | **Svadobná / výročná pesnička** (prémiová, dlhšia, viac verzií) | to isté + ručná kontrola textu | ~0,50 USD | 19,90 € |
 | 18 | **Prečítaj text nahlas** (list, rozprávku, spomienky – pekným slovenským hlasom) | ElevenLabs v3 TTS (podporuje slovenčinu) | ~0,08 USD / 1 000 znakov | 0,99 – 1,99 € |
 | 19 | **Rozprávka na dobrú noc** s menom vnúčaťa (text + hlas + 1 – 3 ilustrácie) | LLM + TTS + image | ~0,20 – 0,50 USD | 2,99 € |
 
@@ -100,7 +101,7 @@ cena = návrh predajnej ceny s DPH.
 | # | Nástroj | Čím to urobiť | Náklad | Cena (návrh) |
 |---|---|---|---|---|
 | 20 | ★ **Video blahoželanie** (fotka oslávenca + text + hudba, krátky animovaný klip) | image‑to‑video + AI pesnička / hudba + strih (ffmpeg) | 0,50 – 1,50 USD | 4,99 € |
-| 21 | **Hovoriaca fotka** (babka na fotke povie „Všetko najlepšie, Janko!“) | TTS + lip‑sync avatar: Kling Avatar 2.0 (0,04 – 0,09 USD/s), OmniHuman 1.5 (~0,13 – 0,18 USD/s) | 0,70 – 3 USD / 15 s | 4,99 – 6,99 € |
+| 21 | **Hovoriaca fotka** (babka na fotke povie „Všetko najlepšie, Janko!“) | TTS + lip‑sync avatar: Kling Avatar 2.0 (0,04 – 0,09 USD/s), OmniHuman 1.5 (~0,13 – 0,18 USD/s) | 0,70 – 3 USD / 15 s | 5,99 – 7,99 € (konkurencia od 15 €) |
 | 22 | **Spomienkové video zo fotiek** (prezentácia 10 – 30 fotiek s hudbou, jemné pohyby) | väčšinou obyčajný strih (takmer zadarmo) + AI hudba + 1 – 3 oživené fotky | 0,30 – 2 USD | 6,99 – 9,99 € |
 | 23 | **Krátke video podľa popisu** („mačka hrá na harmonike na Kráľovej holi“) | text‑to‑video (Kling, Seedance, Veo) | 0,30 – 2 USD | 3,99 € |
 
@@ -200,7 +201,7 @@ Produkty a ceny (návrh):
 |---|---|
 | AR živá fotka – digitálne (PDF na vytlačenie doma / vo fotolabe) | +2,99 € k „Oživ fotku“ |
 | AR živá fotka 10×15 vytlačená a poslaná poštou | 7,99 – 9,99 € |
-| AR fotka na plátne / v rámiku (30×40) | 29 – 39 € |
+| AR fotka na plátne / v rámiku (30×40) | 24,90 – 34,90 € (bežné plátno bez AR stojí 7 – 16 €) |
 | AR pohľadnica s video blahoželaním | 6,99 € |
 | AR fotokniha / kalendár (každá strana „ožije“) | 29 – 49 € |
 
@@ -295,16 +296,19 @@ nastavením. Súčasne sa prihlásiť do Suno partner programu.
 
 ## 5. Peniaze: ako to účtovať
 
-### 5.1 Príklad marže – pesnička za 4,99 €
+### 5.1 Príklad marže – pesnička za 9,90 €
 
 | Položka | Suma |
 |---|---|
-| Cena pre zákazníka (s DPH) | 4,99 € |
-| − DPH 23 % (ak sme platitelia) | −0,93 € |
-| − Stripe (1,5 % + 0,25 €, EHP karta) | −0,32 € |
+| Cena pre zákazníka (s DPH) | 9,90 € |
+| − DPH 23 % (ak sme platitelia) | −1,85 € |
+| − Stripe (1,5 % + 0,25 €, EHP karta) | −0,40 € |
 | − AI náklad (2 verzie × Lyria + text) | −0,17 € |
 | − e‑mail / SMS / úložisko | −0,05 € |
-| **Hrubá marža** | **≈ 3,5 €** (~70 %) |
+| **Hrubá marža** | **≈ 7,4 €** (~75 %) |
+
+Aj za polovičnú cenu oproti najlacnejšej „seriózne“ vyzerajúcej konkurencii (Melodun 19,90 €)
+je marža vysoká – priestor na reklamu, zľavy a darčekové poukazy.
 
 Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jednej lacnej veci**.
 
@@ -512,9 +516,109 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
 
 1. Firma: živnosť alebo s.r.o.? (pri GDPR a deepfake rizikách skôr s.r.o. – ručenie)
 2. Ktorý poskytovateľ pesničiek – rozhodne slepý test.
-3. Cenová stratégia: lacnejšie ako konkurencia (objem), alebo rovnaké ceny + lepšia
-   služba a slovenčina (marža)? Odporúčam **stredné ceny** a súťažiť jednoduchosťou.
+3. Cenová stratégia: po prieskume (kap. 11) odporúčam byť **zhruba o polovicu lacnejší**
+   ako slovenská konkurencia, ale nie najlacnejší – a súťažiť **rýchlosťou (hotové hneď,
+   nie za 1 – 3 dni), jednoduchosťou a tým, že je všetko na jednom mieste**.
 4. Telefonická podpora áno/nie (pre 50+ silný argument).
+
+## 11. Konkurencia a ich ceny (prieskum 10/2026)
+
+> Ako to vzniklo: vyhľadávanie slovenských a českých dopytov („pesnička na mieru“,
+> „oživenie starej fotky“, „reštaurovanie starých fotografií cena“, „písnička na přání AI“…).
+> Ceny sú z verejných stránok / úryvkov vo výsledkoch vyhľadávania k 2. 10. 2026.
+> **Presné poradie na google.sk som overiť nevedel** (môj vyhľadávač nie je google.sk a
+> platené reklamy nad výsledkami nevidím) – odporúčam to ručne prejsť na google.sk v
+> anonymnom okne a pozrieť aj Google Ads plánovač kľúčových slov (hľadanosť).
+> Kurz: 1 € ≈ 24,5 Kč.
+
+### 11.1 Pesnička na mieru – najväčší a najdrahší trh
+
+| Služba | Krajina | Cena | Poznámka |
+|---|---|---|---|
+| [tvorbapesnicky.sk](https://tvorbapesnicky.sk/) | SK | 45 € / 55 € (2 piesne) / 75 € (3) | do 48 h, až 3 – 4 min |
+| [darujpesnicku.sk](https://darujpesnicku.sk/) | SK | 19,90 € (45 – 60 s) / 39,90 € (lyric video) / 79,90 € | viac úrovní |
+| [tvojakord.com](https://www.tvojakord.com/) | SK | od 36,99 € | 30‑dňová garancia vrátenia |
+| [joyla.sk](https://www.joyla.sk/) | SK | od 29,90 € | MP3 e‑mailom do 3 prac. dní |
+| [melodun.sk](https://melodun.sk/) | SK | 19,90 € štandard, 27,89 € expres 24 h | 2 verzie na výber, 1 úprava |
+| [piesenpreteba.sk](https://www.piesenpreteba.sk/) | SK | 9 € mini (~90 s) / 14 € / 19 € expres / 29 € | najlacnejšia SK „značka“ |
+| [jaspravim.sk](https://www.jaspravim.sk/vasapiesen/pesnicka-na-mieru-pre-vas-o-vas-259540) | SK | od 5 € | jednotlivci na bazári služieb |
+| [DarujSong.cz](https://darujsong.cz/) | CZ | 229 Kč (~9,30 €) | AI, rýchla verzia hotová za pár minút |
+| [Píseňpro.mě](https://pisenpro.me/) | CZ | od 300 Kč (~12 €) | AI, ~10 min |
+| [MakeSong.cz](https://makesong.cz/) | CZ | 549 Kč (~22 €) za 3 pokusy, 1. pieseň zadarmo | AI generátor v chate |
+| [Slevomat](https://www.slevomat.cz/akce/2341526-pisnicky-na-prani-vytvorene-za-pomoci-ai-moznost-videa) / [Stovkomat](https://www.stovkomat.cz/ai-pisnicka-na-prani/55978/) | CZ | od 89 Kč (~3,60 €) v akcii | AI pesničky cez zľavové portály |
+
+**Čo z toho plynie:**
+- Na Slovensku sa za pesničku bežne platí **20 – 45 €** a čaká sa **1 – 3 dni**.
+  Veľká časť týchto služieb s veľkou pravdepodobnosťou tiež používa AI (2 verzie na výber,
+  dodanie do 24 h – typický Suno postup), len predávajú „ručnú prácu“.
+- Náš náklad je ~0,20 €. **Pesnička na mieru za 9,90 € hneď na počkanie** je o polovicu
+  lacnejšia ako Melodun a stále má ~75 % maržu. Prémiová (s ľudskou kontrolou textu,
+  svadby, jubileá) za 19,90 €.
+- V Česku je trh už lacnejší (3,60 – 12 €) – pri expanzii do CZ treba rátať s nižšou cenou.
+- Konkurenti predávajú aj cez **Zľavomat/Slevomat** – to je kanál, kde sa reálne
+  stretneme s cieľovkou 50+. Zvážiť kampaň.
+- Doplnkové produkty konkurencie: lyric video, **magnetka s hudbou** (tvorbapesnicky.sk) –
+  potvrdzuje, že fyzické produkty s QR (kap. 3.7) dávajú zmysel.
+
+### 11.2 Oživenie fotky
+
+| Služba | Krajina | Cena | Poznámka |
+|---|---|---|---|
+| [zivefotky.sk](https://zivefotky.sk/) | SK | 1 video zadarmo po registrácii, kredity od 3,95 € | priamy konkurent, 5 s video, slovensky |
+| [živáfotka.cz](https://zivafotka.cz/) | CZ | 49 Kč (~2 €) za fotku (akcia) | bez registrácie |
+| [fotožije.cz](https://fotozije.cz/) | CZ | ~17 Kč (~0,70 €) za animáciu v balíku, balíky od 149 Kč (~6 €) | kreditový systém |
+| [FotkaAI.cz](https://fotkaai.cz/pruvodce/oziveni-fotky-video) | CZ | 10 kreditov / 5 s, 20 / 10 s | kreditový systém |
+| [jaspravim.sk – obnova + oživenie](https://www.jaspravim.sk/zuzana2525/obnova-starych-fotografii-a-ozivenie-do-videa-ai-restaurovanie-266616) | SK | 5 € (obnova + bonus video), 3 fotky 13 € | dodanie do 2 dní |
+| [jaspravim.sk – hovoriace AI video](https://www.jaspravim.sk/babkabozka/ozivim-vasu-fotku-vytvorim-hovoriace-ai-video-s-vlastnym-hlasom-266502) | SK | 15 € | hovoriaca fotka |
+| jaspravim.sk – AI videá z fotiek | SK | 8 – 15 € | rôzni predajcovia |
+| [MyHeritage Deep Nostalgia](https://www.itechguides.com/products/deep-nostalgia/) | svet | obmedzene zadarmo s vodoznakom, inak predplatné MyHeritage (~4 – 14 USD/mes.) | po anglicky, vyžaduje účet |
+
+**Čo z toho plynie:**
+- Tu je trh **lacný a už obsadený** (0,70 – 5 €). Oživenie za 1,99 € (balík 5 ks za 7,99 €)
+  je konkurencieschopné; drahšie to nepôjde.
+- Výhodou nie je cena, ale **balík a nadstavba**: oprava + vyfarbenie + oživenie v jednom
+  kroku, objatie dvoch ľudí, hovoriaca fotka, AR živá fotka na papieri, poslanie ako darček.
+- **Hovoriaca fotka** sa na jaspravim predáva za 15 € → u nás 5,99 – 7,99 € je stále výrazne lacnejšie.
+
+### 11.3 Oprava / reštaurovanie / vyfarbenie fotky
+
+| Služba | Cena | Poznámka |
+|---|---|---|
+| [ZonerAI](https://zonerai.com/sk/) (česká firma Zoner) | **zadarmo** | obnova a vyfarbenie starých fotiek, bez registrácie, aj slovensky |
+| [Adobe Firefly](https://www.adobe.com/cz/products/firefly/features/ai-photo-restoration.html) | zadarmo / predplatné | |
+| [upravafotky.sk](https://www.upravafotky.sk/), [fotkyobrazy.sk](https://fotkyobrazy.sk/retus-fotografie-oprava-starych-fotografii) a ďalšie ateliéry | ~1,33 – 15 € za fotku | ručná retuš podľa poškodenia |
+| [adonaj.sk](https://adonaj.sk/produkt/renovacia-a-oprava-starych-fotografii/), jaspravim.sk | 4,90 – 9,90 € | renovácia, kolorizácia |
+
+**Čo z toho plynie:** samostatná AI oprava fotky sa predávať takmer nedá (ZonerAI je
+zadarmo). Dať ju **zadarmo ako lákadlo** alebo do balíka s oživením/tlačou. Platenú verziu
+odlíšiť ručnou kontrolou („náš grafik to doladí“) za 4,90 € – tam je trh 5 – 15 €.
+
+### 11.4 Video blahoželanie
+
+- Mobilné aplikácie na „video s vlastnou tvárou“ ([App Store](https://apps.apple.com/sk/app/video-blaho%C5%BEelanie-narodenin%C3%A1m/id1500853741?l=sk)) – zadarmo, ale gýčové šablóny.
+- [ShowTimes.sk](https://showtimes.sk/o-nas/) – video pozdrav od slovenskej celebrity (desiatky eur).
+- **Priamy konkurent „video blahoželanie s fotkou oslávenca + vlastnou pesničkou“ som
+  nenašiel** – dobrá medzera pre nás (cena 4,99 – 6,99 €).
+
+### 11.5 AR živá fotka / QR produkty
+
+- **Slovenského ani českého poskytovateľa AR fotky som nenašiel** (zahraničné: Stories AR,
+  Artivive – po anglicky, pre umelcov a firmy). Výhoda prvého na trhu.
+- Porovnanie pre cenotvorbu tlače: plátno bez AR od ~6,90 € ([onlinefotky.sk](https://www.onlinefotky.sk/fotoplatno))
+  do ~15,90 € ([darcekyodsrdca.sk](https://www.darcekyodsrdca.sk/)), tlač fotky od 0,12 € ([online-fotografie.sk](https://www.online-fotografie.sk/)),
+  hrnček od ~13,50 €. AR plátno za 24,90 – 34,90 € je teda prémia ~10 – 20 € za „wow“ efekt.
+
+### 11.6 Celkové zhrnutie pozície
+
+| Kategória | Konkurencia SK | Náš návrh | Prečo vyhráme |
+|---|---|---|---|
+| Pesnička na mieru | 19,90 – 45 € (1 – 3 dni) | **9,90 €**, hneď | cena + rýchlosť |
+| Narodeninová pesnička (šablóna) | – | **5,90 €** | impulzívny nákup na poslednú chvíľu |
+| Oživenie fotky | 0,70 – 5 € | **1,99 €** (5 ks 7,99 €) | balík s opravou, darček, AR |
+| Oprava/vyfarbenie | zadarmo (ZonerAI) – 15 € | **zadarmo** k oživeniu / 4,90 € s ručnou kontrolou | lákadlo |
+| Hovoriaca fotka | 15 € | **5,99 – 7,99 €** | cena |
+| Video blahoželanie | – (nenašiel som) | **4,99 – 6,99 €** | nový produkt |
+| AR živá fotka | – (nenašiel som) | **+2,99 €** digitálne, 7,99 – 9,99 € vytlačená | nový produkt |
 
 ---
 
