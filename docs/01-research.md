@@ -39,7 +39,7 @@
    dá kedykoľvek odvolať. Riešenie v kap. 6.
 9. **AI Act (EÚ) platí od 2. 8. 2026** – AI obsah musí byť označený (strojovo čitateľne
    + pri realistických ľuďoch aj viditeľne). Nie je to problém, len to treba mať v návrhu od začiatku.
-10. **Začať malo:** 5 dlaždíc (MVP, kap. 9), potom pridávať. Zoznam ~35 nápadov je v kap. 3.
+10. **Začať malo:** 6 dlaždíc (MVP, kap. 9), potom pridávať. Zoznam ~35 nápadov je v kap. 3.
 
 > **Aktuálne rozhodnutia a presný postup** (založenie s.r.o., účtovníctvo, dane, účty,
 > go‑live) sú v [02-postup-od-zalozenia-po-spustenie.md](02-postup-od-zalozenia-po-spustenie.md).
@@ -244,10 +244,10 @@ produkt: ľudia si to posielajú a zdieľajú, takže to robí reklamu samo.
 
 | # | Nástroj | Ako to funguje | Náklad | Cena (návrh) |
 |---|---|---|---|---|
-| 33 | **Rozprávajúce zvieratko** – pes/mačka na fotke povie vtipný text („Pani, kde je moja klobása?“) | LLM napíše vtip (alebo vlastný text) → hlas (TTS) → lip‑sync z fotky | ~0,80 – 1,60 USD / 10 s | 3,99 € |
-| 34 | **Vtipné video blahoželanie** – oslávenec na fotke povie vtipný pozdrav | to isté s fotkou človeka (len so súhlasom, pozri 6.8) | ~1,50 – 2,50 USD / 15 s | 4,99 € |
-| 35 | **Spievajúca fotka** – babka/dedo/pes na fotke zaspieva refrén našej pesničky | pesnička na mieru → lip‑sync refrénu (20 – 30 s) | ~2 – 4,50 USD | **+3,99 € k pesničke** (balík pesnička + spievajúca fotka 12,90 €) |
-| 36 | **Tancujúci dedko** – fotka zatancuje polku, čardáš, disco… | prenos pohybu (motion transfer) z **našich vlastných** šablónových videí na fotku | ~1 – 1,70 USD / 10 s | 3,99 € |
+| 33 | ★ **Rozprávajúce zvieratko** – pes/mačka na fotke povie vtipný text („Pani, kde je moja klobása?“) | LLM napíše vtip (alebo vlastný text) → hlas (TTS) → lip‑sync z fotky | ~0,80 – 1,60 USD / 10 s | 3,99 € |
+| 34 | ★ **Vtipné video blahoželanie** – oslávenec na fotke povie vtipný pozdrav | to isté s fotkou človeka (len so súhlasom, pozri 6.8) | ~1,50 – 2,50 USD / 15 s | 4,99 € |
+| 35 | ★ **Spievajúca fotka** – babka/dedo/pes na fotke zaspieva refrén našej pesničky | pesnička na mieru → lip‑sync refrénu (20 – 30 s) | ~2 – 4,50 USD | **+3,99 € k pesničke** (balík pesnička + spievajúca fotka 12,90 €) |
+| 36 | ★ **Tancujúci dedko** – fotka zatancuje polku, čardáš, disco… | prenos pohybu (motion transfer) z **našich vlastných** šablónových videí na fotku | ~1 – 1,70 USD / 10 s | 3,99 € |
 | 37 | **Ty v scéne** – Jánošík, kozmonaut, folklórny festival, svadba z roku 1970… | referenčné video z fotky + **naše** scény (AI generované) | ~0,60 – 1,30 USD / 5 – 10 s | 3,99 € |
 | 38 | **Prerob svoje video** – vo **vlastnom** videu (oslava, dovolenka) niekto povie nový vtipný text, alebo preklad do inej reči | video‑to‑video lip‑sync | ~2 – 4 USD / 30 s | 7,99 € |
 
@@ -259,8 +259,11 @@ Pravidlá (podrobne v 6.8):
 - Hlas vždy z **knižnice hotových hlasov**, nikdy klon konkrétnej osoby (pozri 3.9).
 - Viditeľné označenie „AI“ vo videu (AI Act – deepfake).
 
-Navrhujem to ako **prvú vec fázy 2** (2 – 4 týždne po spustení), začať zvieratkom a
-spievajúcou fotkou (nadväzuje na pesničky, zvyšuje priemernú objednávku).
+**Rozhodnutie (10/2026): smiešne videá idú do MVP** ako jedna dlaždica „Smiešne videá“
+s možnosťami #33 – #36 (★). Spievajúca fotka sa navyše ponúkne pri objednávke pesničky.
+**#37 „Ty v scéne“ a #38 „Prerob svoje video“ až vo fáze 2** – prvé potrebuje knižnicu
+našich scén, druhé nahrávanie videí, a tam je ťažké automaticky odhaliť filmové/TV
+zábery a cudzie osoby (vyššie právne riziko, pozri 6.8 – 6.9).
 
 ### 3.9 Čo vedome NEROBIŤ (aspoň nie na začiatku)
 
@@ -500,6 +503,60 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
   záznamu, kto čo vytvoril (logy), tlačidlo „Nahlásiť zneužitie“.
 - Zvieratá: bez obmedzení podobizne, stačí bežná moderácia textu.
 
+### 6.9 Kto nesie zodpovednosť, keď niekto zneužije službu (napr. fotka politika)
+
+**Krátko: áno, zodpovednosť môžeme niesť aj my, nie iba zákazník.** ⚖️ (prebrať s advokátom)
+
+Prečo:
+- Nie sme len „úložisko“ cudzieho obsahu (tam by platila ochrana hostingu podľa DSA –
+  nariadenie 2022/2065). Video **vyrába náš systém na našu objednávku a za peniaze**.
+  Je preto reálne, že by sme boli považovaní za spolutvorcu, nie len za pasívneho
+  sprostredkovateľa – právne to nie je jednoznačne vyriešené.
+- **Ochrana osobnosti (§ 11 – 16 Občianskeho zákonníka):** dotknutý (aj politik) môže
+  žalovať o zdržanie sa, odstránenie, ospravedlnenie a **peňažnú náhradu nemajetkovej
+  ujmy** – a môže žalovať aj firmu, ktorá video vyrobila.
+- **GDPR:** fotka tváre politika je jeho osobný údaj; my ho spracúvame bez právneho
+  základu → riziko pokuty od Úradu na ochranu osobných údajov.
+- **AI Act čl. 50:** ak by výstup nebol strojovo označený ako AI, porušujeme povinnosť
+  my ako poskytovateľ (pokuty až do 15 mil. € / 3 % obratu; pre malé firmy nižšia z hodnôt).
+- **Trestné právo:** za ohováranie a podobné činy zodpovedá primárne ten, kto video
+  vytvoril a šíril (zákazník). Firma by mala problém hlavne vtedy, keby o zneužití vedela
+  a nič neurobila.
+- **Podmienky AI dodávateľov** (Google, MiniMax, fal, ElevenLabs…) zakazujú klamlivý
+  obsah so skutočnými verejnými osobami → hrozí **zrušenie našich účtov** = zastavenie
+  celého biznisu. Prakticky najväčšie riziko.
+- **Reputácia:** Slovensko má skúsenosť s deepfake nahrávkami politikov z volieb 2023.
+  Titulok „slovenská firma robí deepfaky politikov“ by projekt zabil.
+- Satira a karikatúra politikov sú síce chránené slobodou prejavu, ale realistický
+  deepfake nie je karikatúra a my nie sme satirické médium → **úplne zakázať**.
+
+Čo urobíme, aby riziko kleslo na minimum (a zodpovednosť zostala na zákazníkovi, ktorý
+pravidlá vedome porušil):
+
+1. **VOP:** zákaz verejne známych osôb (politici, celebrity, športovci, influenceri),
+   zákaz klamania a zosmiešňovania; zákazník **zodpovedá za škodu**, ktorú nám porušením
+   spôsobí (vrátane pokút a nákladov sporu) → máme od neho nárok na náhradu.
+2. **Potvrdenie pred každou objednávkou** s fotkou človeka: „Na fotke som ja, alebo mám
+   súhlas tejto osoby, alebo ide o môjho zosnulého blízkeho. Nie je to verejne známa osoba.“
+3. **Technické blokovanie:**
+   - zapnuté filtre verejných osôb u AI dodávateľov (väčšina ich má),
+   - kontrola textu (LLM): mená politikov, strán, volieb, urážky, nepravdivé tvrdenia
+     o trestnej činnosti → zamietnuť,
+   - voliteľne automatické rozpoznanie známych tvárí (napr. AWS Rekognition – rozpoznanie
+     celebrít, ~0,001 USD/fotka). ⚖️ Pozor: je to biometrické spracovanie aj bežných
+     zákazníkov → najprv konzultovať s advokátom (GDPR čl. 9).
+4. **Viditeľný vodoznak „AI“ + strojové označenie (C2PA/metadáta)** v každom videu.
+5. **Žiadne verejné galérie** – výsledok je na súkromnom odkaze.
+6. **Tlačidlo „Nahlásiť zneužitie“** na stránke každého výsledku; nahlásené video
+   **okamžite stiahnuť** a preveriť (povinnosť hostingu podľa DSA – mechanizmus oznámení).
+7. **Logy** (kto, kedy, čo vytvoril) uchovávať primeraný čas – kvôli súčinnosti s
+   políciou a obrane firmy ⚖️ (dĺžku nastaviť v súlade s GDPR).
+8. **Zablokovanie účtu** pri porušení, bez vrátenia peňazí (vo VOP).
+
+S týmito opatreniami je pravdepodobnosť problému nízka a pri spore vieme preukázať, že
+sme urobili všetko rozumné. Nulové riziko však neexistuje → **advokát musí VOP pre
+smiešne videá skontrolovať pred spustením.**
+
 ## 7. Doručenie výsledku („pošli to rovno mamke“)
 
 - Každý výsledok dostane **vlastnú stránku** `strediskoai.sk/d/xxxxxxx` (náhodný, neuhádnuteľný
@@ -556,14 +613,14 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
    Presný postup: dokument 02.
 
 **Fáza 1 – MVP (4 – 6 týždňov)**
-- 5 dlaždíc: Pesnička na mieru (9,90 €), Narodeninová/meninová pesnička (5,90 €),
+- 6 dlaždíc: Pesnička na mieru (9,90 €), Narodeninová/meninová pesnička (5,90 €),
   Oživ fotku + oprava a vyfarbenie zadarmo (1,99 €, 5 ks 7,99 €), Video blahoželanie
-  (5,99 €), Blahoželanie/básnička (zadarmo).
+  (5,99 €), Smiešne videá (rozprávajúce zvieratko 3,99 €, vtipný pozdrav z fotky 4,99 €, tancujúca fotka 3,99 €, spievajúca fotka +3,99 € k pesničke / balík 12,90 €), Blahoželanie/básnička (zadarmo).
 - Peňaženka + priama platba, darčekové poslanie e‑mailom/SMS, stránka výsledku, mazanie po 30 dňoch.
 - Slovenčina, mobil na prvom mieste (väčšina 50+ príde z Facebooku na mobile).
 
 **Fáza 2 – rast**
-- **Ako prvé: zábavné videá s lip‑syncom** (rozprávajúce zvieratko, spievajúca fotka – kap. 3.8).
+- **Ako prvé: ďalšie zábavné videá** – „Ty v scéne“ a „Prerob svoje video“ (kap. 3.8).
 - Darčekové poukazy, tlač (plátno, hrnček, pohľadnica s QR), hovoriaca fotka, spomienkové video.
 - QR pesnička / hudobná pohľadnica, potom AR živá fotka (MindAR) s tlačou a poštou.
 - Marketing (až po spustení): Facebook skupiny a reklamy na 50+, meninový kalendár
@@ -718,7 +775,8 @@ lepšie modely sú dnes porovnateľne drahé alebo dokonca lacnejšie.
 2. Oživenie: MiniMax H3 vs. Gemini Omni Flash vs. Seedance 2.0.
 3. Pesnička: ElevenLabs Music v2 vs. Lyria 3.5 vs. Mureka – zrozumiteľnosť slovenčiny.
 4. Hlas: Eleven v4 vs. Gemini TTS – prirodzenosť slovenčiny.
-5. (Pre fázu 2) hovoriaca fotka: Fabric vs. OmniHuman vs. Kling Avatar.
+5. Lip‑sync z fotky (smiešne videá, MVP): Fabric vs. OmniHuman vs. Kling Avatar – na človeku aj na zvieratku.
+6. Prenos pohybu (tancujúca fotka): Kling 3.0 Motion Control vs. MiniMax H3.
 
 ---
 

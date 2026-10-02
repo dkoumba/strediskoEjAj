@@ -15,7 +15,7 @@ Prešiel som celý research ešte raz. Toto sú závery, ktoré ovplyvňujú pos
 1. **Najväčšie riziko je kvalita slovenského spevu.** Pesnička na mieru je produkt s
    najväčšou maržou (konkurencia 20 – 45 €, náš náklad ~0,20 €). Keď AI nebude spievať
    zrozumiteľne po slovensky, padá hlavný zdroj príjmu. **Prvý test preto robíme ešte
-   pred založením firmy** (krok 1.2). Stojí do 50 € a 2 dni práce.
+   pred založením firmy** (krok 1.2). Stojí do 70 € a 2 – 3 dni práce.
 2. **Na začiatku nebyť platiteľom DPH.** Kým firma neprekročí obrat 50 000 € za 12 mesiacov,
    nemusí byť platiteľom DPH a predáva bez DPH. Pri pesničke za 9,90 € tak zostane
    ~9,30 € namiesto ~7,40 €. Povinná je len **registrácia podľa § 7a** (kvôli nákupu
@@ -29,18 +29,22 @@ Prešiel som celý research ešte raz. Toto sú závery, ktoré ovplyvňujú pos
 5. **AI služby platiť firemnou kartou, nie prevodom.** S.r.o. platí transakčnú daň
    0,4 % z odchádzajúcich prevodov (max. 40 € za transakciu). Platby kartou sú
    oslobodené, za každú použitú kartu sa platí 2 € ročne.
-6. **MVP zúžiť na 5 dlaždíc.** QR/AR a tlač až vo fáze 2 (tlač a pošta pridávajú
+6. **MVP = 6 dlaždíc.** QR/AR a tlač až vo fáze 2 (tlač a pošta pridávajú
    logistiku, reklamácie a sklad). Na spustenie:
    - Pesnička na mieru (9,90 €)
    - Narodeninová / meninová pesnička (5,90 €)
    - Oživ fotku + oprava a vyfarbenie zadarmo (1,99 €, 5 ks za 7,99 €)
    - Video blahoželanie (5,99 €)
+   - **Smiešne videá** (lip‑sync): rozprávajúce zvieratko 3,99 €, vtipný pozdrav z fotky
+     4,99 €, tancujúca fotka 3,99 €, spievajúca fotka +3,99 € k pesničke (balík 12,90 €)
    - Blahoželanie / básnička (zadarmo, lákadlo)
 7. **Vždy najlepší model, nie najlacnejší.** Rozdiel je v centoch. Kontrola rebríčkov
    (10/2026) ukázala lepšie modely, než aké boli v pôvodnom researchi: MAI‑Image‑2.6 /
    Seedream 5.0 Pro na fotky, MiniMax H3 na video, Eleven v4 na hlas (research, kap. 12).
-8. **Fáza 2 začne zábavnými videami s lip‑syncom** (rozprávajúce zvieratko, spievajúca
-   fotka, tancujúci dedko). Prerábky len vlastných videí zákazníka (research, kap. 3.8 a 6.8).
+8. **Smiešne videá sú v MVP**, ale s prísnymi pravidlami: zákaz politikov a známych osôb,
+   potvrdenie súhlasu, kontrola textu, vodoznak AI, nahlásenie zneužitia (research,
+   kap. 3.8, 6.8 a 6.9 – kto nesie zodpovednosť). „Ty v scéne“ a „Prerob svoje video“
+   až vo fáze 2.
 9. **Dizajn od prvého dňa viacjazyčný.** Texty budú v súboroch, preklad do CZ/HU/PL
    je neskôr len preklad, nie prerábanie.
 
@@ -61,11 +65,11 @@ Cieľ: nevyhodiť 5 000 € na firmu, ak AI nespieva dobre po slovensky.
   držiteľa u registrátora) alebo ich necháš na sebe a firme ich prenajmeš. ⚖️
 - **DNS zatiaľ nemeň**, nastavíme ho spolu v kroku 4.3.
 
-### 1.2 👤 + 🤖 Test kvality AI (rozpočet ~50 €, platíš súkromnou kartou)
+### 1.2 👤 + 🤖 Test kvality AI (rozpočet ~70 €, platíš súkromnou kartou)
 
 1. 👤 Založ si účty (na svoj e‑mail, neskôr ich prevedieme na firemný):
    - [Google AI Studio](https://aistudio.google.com) – Lyria 3.5 (hudba), Gemini Omni Flash (video), Gemini TTS. Pridaj kartu (EÚ musí byť na platenom režime).
-   - [fal.ai](https://fal.ai) – MiniMax H3, Seedance 2.0 (video), Seedream 5.0 Pro (fotky), neskôr lip‑sync. Nabi 20 USD.
+   - [fal.ai](https://fal.ai) – MiniMax H3, Seedance 2.0 (video), Seedream 5.0 Pro (fotky), lip‑sync (VEED Fabric, OmniHuman, Kling Avatar), Kling Motion Control. Nabi 40 USD.
    - [OpenRouter](https://openrouter.ai) – MAI‑Image‑2.6 a GPT Image 2 (fotky) cez jeden účet. Nabi 10 USD.
    - [Mureka](https://platform.mureka.ai) – hudba. Najmenší balík.
    - [ElevenLabs](https://elevenlabs.io) – Music v2 a hlas Eleven v4. Starter (~5 USD).
@@ -74,7 +78,9 @@ Cieľ: nevyhodiť 5 000 € na firmu, ak AI nespieva dobre po slovensky.
    - 3 ľudovky (*Tancuj, tancuj*, *Kopala studienku*, *Na Kráľovej holi*) a
      3 pesničky na mieru (narodeniny 70, svadba, uspávanka), každú v 3 službách = 18 pesničiek;
    - opravu a oživenie 10 tvojich starých rodinných fotiek (3 modely na opravu, 3 na oživenie);
-   - slovenský hlas (Eleven v4 vs. Gemini TTS) na 3 krátkych textoch.
+   - slovenský hlas (Eleven v4 vs. Gemini TTS) na 3 krátkych textoch;
+   - smiešne videá: lip‑sync z fotky (Fabric vs. OmniHuman vs. Kling Avatar) na 3 ľuďoch
+     a 3 zvieratkách, tancujúca fotka (Kling 3.0 Motion Control vs. MiniMax H3).
 3. 👤 Pustíš to 5 – 10 ľuďom 50+ (rodina, susedia) **naslepo** (bez názvu služby). Hodnotia:
    rozumiem textu? znie to pekne? dal by som za to 10 €?
 4. **Rozhodnutie:** keď aspoň jedna hudobná služba dostane od väčšiny „áno, rozumiem a
@@ -348,14 +354,19 @@ Toto robím prevažne ja 🤖, ty 👤 testuješ a rozhoduješ.
 3. **Narodeninová pesnička** (šablóna: meno, vek, štýl).
 4. **Oživ fotku** (nahraj → automatická oprava a vyfarbenie → oživenie → výsledok).
 5. **Video blahoželanie** (fotka + text + hudba → strih).
-6. **Blahoželanie / básnička zadarmo** (bez platby, po zadaní e‑mailu).
-7. **Stránka výsledku** `strediskoai.sk/d/…` (Prehrať, Stiahnuť, Zdieľať, Poslať darček
+6. **Smiešne videá:** výber typu (zvieratko / vtipný pozdrav / tancujúca fotka) →
+   nahraj fotku → text (vlastný alebo „vymysli vtip“) a hlas z knižnice → potvrdenie
+   pravidiel → zaplatiť. Spievajúca fotka ako doplnok v objednávke pesničky.
+   Bezpečnosť: filter verejných osôb, kontrola textu, vodoznak AI, tlačidlo
+   „Nahlásiť zneužitie“, logy (research 6.9).
+7. **Blahoželanie / básnička zadarmo** (bez platby, po zadaní e‑mailu).
+8. **Stránka výsledku** `strediskoai.sk/d/…` (Prehrať, Stiahnuť, Zdieľať, Poslať darček
    e‑mailom/SMS s naplánovaným časom).
-8. **Platby:** Stripe, peňaženka (5/10/20 €), priama platba, doklad e‑mailom.
-9. **Free skúška:** 1 výstup s vodoznakom po overení e‑mailu, ochrana proti zneužitiu.
-10. **Mazanie:** vstupné fotky do 24 h, výsledky po 30 dňoch (automaticky).
-11. **Administrácia:** objednávky, náklady, marža, vrátenie peňazí, export pre účtovníka.
-12. **Právne stránky** + päta (IČO, sídlo, kontakt).
+9. **Platby:** Stripe, peňaženka (5/10/20 €), priama platba, doklad e‑mailom.
+10. **Free skúška:** 1 výstup s vodoznakom po overení e‑mailu, ochrana proti zneužitiu.
+11. **Mazanie:** vstupné fotky do 24 h, výsledky po 30 dňoch (automaticky).
+12. **Administrácia:** objednávky, náklady, marža, vrátenie peňazí, export pre účtovníka, nahlásenia zneužitia.
+13. **Právne stránky** + päta (IČO, sídlo, kontakt).
 
 ### 6.3 Prostredia
 
@@ -419,7 +430,7 @@ sledovať chyby a náklady. Potom marketing.
 | 2 | rozhodnutie GO/NO‑GO, banka, sídlo, podanie s.r.o. | kostra webu, dizajn | (advokát – ak cesta B) |
 | 3 | zápis firmy, § 7a, firemný e‑mail | pesnička na mieru, platby (test) | účtovník – zmluva |
 | 4 | účty na firmu, Stripe aktivácia | oživenie fotky, výsledková stránka | |
-| 5 | testovanie priebežných verzií | video blahoželanie, darček e‑mail/SMS | advokát dostane texty |
+| 5 | testovanie priebežných verzií | video blahoželanie, smiešne videá, darček e‑mail/SMS | advokát dostane texty (vrátane pravidiel pre smiešne videá) |
 | 6 | | admin, export, mazanie, právne stránky | advokát vráti pripomienky |
 | 7 | beta s 10 – 20 ľuďmi | opravy podľa bety | účtovník kontrola |
 | 8 | ostrý test nákupu | go‑live checklist | |

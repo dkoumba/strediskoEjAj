@@ -27,12 +27,16 @@ a **Stav**.
 - Forma: **s.r.o.** (otvorené: sám/so spoločníkom; formulár vs. advokát).
 - Na začiatku **neplatiteľ DPH**, len registrácia **§ 7a** pred prvým nákupom AI zo zahraničia.
 - eKasa netreba (len online platby vopred). AI služby platiť firemnou kartou (transakčná daň).
-- **MVP = 5 dlaždíc:** Pesnička na mieru 9,90 € · Narodeninová/meninová pesnička 5,90 € ·
+- **MVP = 6 dlaždíc:** Pesnička na mieru 9,90 € · Narodeninová/meninová pesnička 5,90 € ·
   Oživ fotku 1,99 € (5 ks 7,99 €; oprava + vyfarbenie zadarmo) · Video blahoželanie 5,99 € ·
+  **Smiešne videá** (lip‑sync: rozprávajúce zvieratko 3,99 €, vtipný pozdrav z fotky 4,99 €,
+  tancujúca fotka 3,99 €, spievajúca fotka +3,99 € k pesničke / balík 12,90 €) ·
   Blahoželanie/básnička zadarmo.
-- Fáza 2: **najprv zábavné videá s lip‑syncom** (rozprávajúce zvieratko, spievajúca fotka,
-  tancujúci dedko, „ty v scéne“, prerábka **vlastného** videa – research 3.8, právo 6.8),
-  potom hovoriaca fotka, darčekové poukazy, QR pesnička / hudobná pohľadnica,
+- Smiešne videá: **zákaz politikov a známych osôb** (VOP + potvrdenie súhlasu + filter
+  verejných osôb + kontrola textu + vodoznak AI + „Nahlásiť zneužitie“ + logy). Firma môže
+  niesť zodpovednosť aj sama (research 6.9) – VOP musí skontrolovať advokát.
+- Fáza 2: „Ty v scéne“, „Prerob svoje video“ (len vlastné videá; research 3.8, 6.8),
+  hovoriaca fotka, darčekové poukazy, QR pesnička / hudobná pohľadnica,
   AR živá fotka (MindAR), tlač. Marketing až po spustení.
 - **Modely: kvalita na prvom mieste** (rozdiel pár centov nerieši). Aktuálny výber
   (research kap. 12, 10/2026): oprava fotky MAI‑Image‑2.6 / Seedream 5.0 Pro,
