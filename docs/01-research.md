@@ -69,6 +69,7 @@
 ## 3. Čo všetko môžeme ponúkať
 
 Legenda: **★ = MVP (spustiť ako prvé)**, náklad = čo zaplatíme my za 1 výstup (približne),
+Stĺpec „Čím to urobiť“ je pôvodný odhad – **aktuálny výber najlepších modelov je v kap. 12**.
 cena = návrh predajnej ceny s DPH.
 
 ### 3.1 Fotky
@@ -235,11 +236,38 @@ Pri digitálnom výsledku stačí uchovávať 30 dní, ale **vytlačená fotka v
   urobí spomienkové video.
 - **Rodokmeň na plagáte**, kde každá fotka po naskenovaní ožije.
 
-### 3.6 Čo vedome NEROBIŤ (aspoň nie na začiatku)
+### 3.8 Zábavné videá a lip‑sync (nápad 10/2026)
+
+Lip‑sync = postava na fotke alebo vo videu hýbe perami presne podľa zvuku. Technológia je
+v roku 2026 veľmi dobrá a cenovo dostupná (0,05 – 0,15 USD za sekundu). Je to silný „vírusový“
+produkt: ľudia si to posielajú a zdieľajú, takže to robí reklamu samo.
+
+| # | Nástroj | Ako to funguje | Náklad | Cena (návrh) |
+|---|---|---|---|---|
+| 33 | **Rozprávajúce zvieratko** – pes/mačka na fotke povie vtipný text („Pani, kde je moja klobása?“) | LLM napíše vtip (alebo vlastný text) → hlas (TTS) → lip‑sync z fotky | ~0,80 – 1,60 USD / 10 s | 3,99 € |
+| 34 | **Vtipné video blahoželanie** – oslávenec na fotke povie vtipný pozdrav | to isté s fotkou človeka (len so súhlasom, pozri 6.8) | ~1,50 – 2,50 USD / 15 s | 4,99 € |
+| 35 | **Spievajúca fotka** – babka/dedo/pes na fotke zaspieva refrén našej pesničky | pesnička na mieru → lip‑sync refrénu (20 – 30 s) | ~2 – 4,50 USD | **+3,99 € k pesničke** (balík pesnička + spievajúca fotka 12,90 €) |
+| 36 | **Tancujúci dedko** – fotka zatancuje polku, čardáš, disco… | prenos pohybu (motion transfer) z **našich vlastných** šablónových videí na fotku | ~1 – 1,70 USD / 10 s | 3,99 € |
+| 37 | **Ty v scéne** – Jánošík, kozmonaut, folklórny festival, svadba z roku 1970… | referenčné video z fotky + **naše** scény (AI generované) | ~0,60 – 1,30 USD / 5 – 10 s | 3,99 € |
+| 38 | **Prerob svoje video** – vo **vlastnom** videu (oslava, dovolenka) niekto povie nový vtipný text, alebo preklad do inej reči | video‑to‑video lip‑sync | ~2 – 4 USD / 30 s | 7,99 € |
+
+Pravidlá (podrobne v 6.8):
+- **Zvieratá sú právne najbezpečnejšie** (žiadne práva na podobizeň) a sú najvirálnejšie →
+  začať nimi.
+- Ľudia len vlastní / so súhlasom; žiadne celebrity, politici, filmové a TV scény,
+  hudobné klipy. „Prerábky“ len **vlastných videí zákazníka** alebo **našich šablón**.
+- Hlas vždy z **knižnice hotových hlasov**, nikdy klon konkrétnej osoby (pozri 3.9).
+- Viditeľné označenie „AI“ vo videu (AI Act – deepfake).
+
+Navrhujem to ako **prvú vec fázy 2** (2 – 4 týždne po spustení), začať zvieratkom a
+spievajúcou fotkou (nadväzuje na pesničky, zvyšuje priemernú objednávku).
+
+### 3.9 Čo vedome NEROBIŤ (aspoň nie na začiatku)
 
 - **Klonovanie hlasu** („hlas zosnulého dedka“) – senior je hlavný cieľ podvodov typu
   „vnuk volá, že potrebuje peniaze“; klonované hlasy sú presne nástroj týchto podvodov.
-  Reputačné a právne riziko je väčšie ako zisk.
+  Reputačné a právne riziko je väčšie ako zisk. (Platí aj pre zábavné videá v 3.8 –
+  hlasy len z knižnice hotových hlasov.)
 - **Zmena oblečenia / „vyzleč“, úpravy tiel**, fotky detí v čomkoľvek inom ako nevinnom
   kontexte – treba to aj technicky blokovať (moderácia vstupov aj výstupov).
 - **Politici, celebrity, známe osoby** – blokovať.
@@ -249,6 +277,8 @@ Pri digitálnom výsledku stačí uchovávať 30 dní, ale **vytlačená fotka v
 ---
 
 ## 4. Poskytovatelia (od koho nakupujeme)
+
+> **Aktuálny výber modelov podľa kvality je v kap. 12** (má prednosť pred 4.1 – 4.3).
 
 ### 4.1 Pesničky – kľúčová a najrizikovejšia časť
 
@@ -280,7 +310,7 @@ nastavením. Súčasne sa prihlásiť do Suno partner programu.
 - **LLM na texty:** Claude / Gemini / GPT – texty, básničky, kontrola a úprava textov piesní
   do spievateľnej podoby, preklad do ďalších jazykov stránky. Náklad ~0,001 – 0,02 USD na úlohu.
 
-### 4.3 Orientačné náklady (9/2026)
+### 4.3 Orientačné náklady (9/2026) – pôvodný prehľad, aktuálne modely v kap. 12
 
 | Čo | Model | Cena |
 |---|---|---|
@@ -454,6 +484,22 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
 
 ---
 
+### 6.8 Zábavné videá, lip‑sync a deepfake
+
+- Video, kde skutočný človek „hovorí“ niečo, čo nepovedal, je **deepfake** → podľa AI Actu
+  (čl. 50 ods. 4) musí byť **viditeľne označené** ako AI. Robíme to vždy, priamo vo videu.
+- **Ochrana osobnosti** (§ 11 – 13 Občianskeho zákonníka): zosmiešnenie alebo
+  dehonestujúci text o konkrétnom človeku môže byť zásah do osobnosti. Zákazník potvrdí,
+  že má súhlas osoby (alebo ide o neho/zosnulého blízkeho), a texty prechádzajú
+  automatickou kontrolou (vulgarizmy, urážky, sexuálny obsah, nenávisť, tvrdenia o trestnej
+  činnosti, politika).
+- **Autorské práva:** filmy, seriály, TV relácie, hudobné klipy a známe videá **nepovoliť**
+  ako vstup (aj „len na srandu“ je to spracovanie cudzieho diela + podobizeň hercov).
+  Povolené sú len vlastné videá zákazníka a naše šablóny.
+- **Ochrana pred podvodmi:** žiadne klonovanie hlasu, krátka dĺžka, vodoznak, uchovávanie
+  záznamu, kto čo vytvoril (logy), tlačidlo „Nahlásiť zneužitie“.
+- Zvieratá: bez obmedzení podobizne, stačí bežná moderácia textu.
+
 ## 7. Doručenie výsledku („pošli to rovno mamke“)
 
 - Každý výsledok dostane **vlastnú stránku** `strediskoai.sk/d/xxxxxxx` (náhodný, neuhádnuteľný
@@ -517,6 +563,7 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
 - Slovenčina, mobil na prvom mieste (väčšina 50+ príde z Facebooku na mobile).
 
 **Fáza 2 – rast**
+- **Ako prvé: zábavné videá s lip‑syncom** (rozprávajúce zvieratko, spievajúca fotka – kap. 3.8).
 - Darčekové poukazy, tlač (plátno, hrnček, pohľadnica s QR), hovoriaca fotka, spomienkové video.
 - QR pesnička / hudobná pohľadnica, potom AR živá fotka (MindAR) s tlačou a poštou.
 - Marketing (až po spustení): Facebook skupiny a reklamy na 50+, meninový kalendár
@@ -638,10 +685,46 @@ odlíšiť ručnou kontrolou („náš grafik to doladí“) za 4,90 € – tam
 | Video blahoželanie | – (nenašiel som) | **4,99 – 6,99 €** | nový produkt |
 | AR živá fotka | – (nenašiel som) | **+2,99 €** digitálne, 7,99 – 9,99 € vytlačená | nový produkt |
 
+## 12. Výber najlepších modelov – kvalita na prvom mieste (prieskum 10/2026)
+
+**Princíp:** pri rozdiele pár centov **vždy berieme najlepší model**, nie najlacnejší.
+Výber robíme podľa **nezávislých rebríčkov s hlasovaním ľudí naslepo** (Artificial Analysis,
+Arena.ai/LMArena) a **finálne rozhodne náš slepý test na slovenských dátach** (dokument 02,
+krok 1.2). Rebríčky sa menia mesačne → **raz za štvrťrok prekontrolovať** a modely vymeniť
+v konfigurácii (kód sa nemení).
+
+Kontrola pôvodného výberu ukázala, že **Nano Banana Pro a Kling neboli najlepšie** –
+lepšie modely sú dnes porovnateľne drahé alebo dokonca lacnejšie.
+
+| Úloha | 🥇 Hlavná voľba | Záloha / do testu | Cena (hlavná) | Prečo |
+|---|---|---|---|---|
+| **Oprava a vyfarbenie fotky** | **MAI‑Image‑2.6** (Microsoft, cez Microsoft Foundry / OpenRouter) | **Seedream 5.0 Pro** (fal), GPT Image 2 (high) | ~0,04 USD | #1 v rebríčku úprav obrázkov Artificial Analysis vrátane kategórie *Enhancement & Restoration*. Pozor: zatiaľ „preview“ → mať zálohu |
+| **Zachovanie tváre** (staré fotky, spájanie ľudí, portréty) | **Seedream 5.0 Pro** | MAI‑Image‑2.6, GPT Image 2 | 0,0675 – 0,135 USD | #1 v kategórii *Identity‑Preserving Edit* – pre fotky zosnulých kľúčové, aby to bola stále „tá istá babka“ |
+| **Oživenie fotky (image‑to‑video)** | **MiniMax H3** (fal / MiniMax API) | **Gemini Omni Flash** (Google), Seedance 2.0 | 0,06 USD/s (768p), 0,13 USD/s (2K) → 5 s = 0,30 – 0,65 USD | #1 v Artificial Analysis aj Arena.ai (image‑to‑video, 9/2026); Omni Flash #2 |
+| **Video blahoželanie / scény** | **MiniMax H3** (reference‑to‑video) | Gemini Omni Flash (~0,10 USD/s, 720p), Veo 3.1 | ako vyššie | to isté |
+| **Hovoriaca fotka (fotka + zvuk → video)** | **VEED Fabric 1.0** | **OmniHuman 1.5**, Kling Avatar 2.0 Pro | ~0,15 USD/s | najlepšia presnosť pier v porovnávacom teste – **ale test robil sám VEED**, preto nutne overiť naším testom |
+| **Lip‑sync existujúceho videa (video → video)** | **sync‑3** (sync.so) | VEED Lip Sync 2.0 (0,07 USD/s), Kling Lipsync | 0,107 – 0,133 USD/s | 4K, rozpozná zakrytie úst, považovaný za špičku |
+| **Prenos pohybu (tancujúci dedko)** | **Kling 3.0 Motion Control** | Runway Act‑Two (tvár a gestá), MiniMax H3 video‑to‑video | ~0,10 – 0,17 USD/s | najlepší na celé telo podľa porovnaní |
+| **Pesnička so spevom** | **finálne podľa slepého testu**: ElevenLabs Music v2 · Lyria 3.5 · Mureka | – | 0,04 – 0,40 USD / pieseň | najlepší spev má Suno v5/v6, ale **bez oficiálneho API**; Udio tiež bez API; MiniMax Music zatvoril platené API pre nových. Z oficiálnych API: ElevenLabs Music v2 (licencované dáta, viacjazyčný výstup), Lyria (rýchla, „korektná“), Mureka (dobrá štruktúra piesne). **Suno partner program sledovať** – po spustení API ho otestovať ako prvý |
+| **Hlas (TTS) po slovensky** | **Eleven v4** (ElevenLabs) | Gemini Flash TTS (aktuálna verzia) | ~0,08 – 0,12 USD / 1 000 znakov | #1 v rebríčku TTS Artificial Analysis (Elo 1320); slovenčinu overiť testom |
+| **Texty (blahoželania, texty piesní, vtipy)** | **najlepší aktuálny model** (Claude Opus / GPT / Gemini Pro) | iný z trojice | < 0,05 USD / úloha | cena je zanedbateľná, rozhoduje kvalita slovenčiny a rýmov → otestovať |
+
+**Dopad na marže:** prakticky žiadny. Napr. oživenie fotky v 2K stojí 0,65 USD namiesto
+0,35 USD a pri cene 1,99 € stále zostáva ~1,25 €. Pri pesničke je rozdiel v centoch.
+
+**Čo z toho do testu vo fáze A** (dokument 02, krok 1.2):
+1. Oprava fotky: MAI‑Image‑2.6 vs. Seedream 5.0 Pro vs. GPT Image 2 – hodnotiť hlavne
+   „je to stále ten istý človek?“.
+2. Oživenie: MiniMax H3 vs. Gemini Omni Flash vs. Seedance 2.0.
+3. Pesnička: ElevenLabs Music v2 vs. Lyria 3.5 vs. Mureka – zrozumiteľnosť slovenčiny.
+4. Hlas: Eleven v4 vs. Gemini TTS – prirodzenosť slovenčiny.
+5. (Pre fázu 2) hovoriaca fotka: Fabric vs. OmniHuman vs. Kling Avatar.
+
 ---
 
 ## Zdroje
 
+- Výber modelov (kap. 12): [Artificial Analysis – image‑to‑video](https://artificialanalysis.ai/video/leaderboard/image-to-video), [Arena.ai – image‑to‑video](https://arena.ai/leaderboard/image-to-video), [Artificial Analysis – úpravy obrázkov](https://artificialanalysis.ai/image/leaderboard/editing/open-weights), [benchmarklist – image editing](https://benchmarklist.com/arenas/artificial_analysis_image_editing/), [MAI‑Image‑2.6 (OpenRouter)](https://openrouter.ai/microsoft/mai-image-2.6), [runtimewire – MAI‑Image‑2.6 ~4 centy](https://runtimewire.com/article/microsoft-mai-image-2-6-foundry-four-cents-image), [fal – Seedream 5.0 Pro vs GPT Image 2](https://fal.ai/learn/devs/seedream-5-0-pro-vs-gpt-image-2), [OpenRouter – Seedream 5.0 Pro](https://openrouter.ai/bytedance-seed/seedream-5-0-pro), [GPT Image 2 ceny](https://wavespeed.ai/blog/posts/gpt-image-2-pricing-2026/), [fal – MiniMax H3](https://fal.ai/models/minimax/h3/reference-to-video), [OpenRouter – MiniMax H3](https://openrouter.ai/minimax/hailuo-3), [Gemini Omni Flash vs Veo 3.1](https://unifically.com/blogs/gemini-omni-1.1-flash-vs-veo-3.1), [Artificial Analysis – TTS](https://artificialanalysis.ai/text-to-speech/leaderboard), [VEED – best lip‑sync API](https://www.veed.io/learn/best-lipsync-api), [sync.so – sync‑3](https://sync.so/docs/models/sync-3), [fal – VEED lipsync](https://fal.ai/models/veed/lipsync), [Dreamina – motion transfer porovnanie](https://dreamina.capcut.com/ai-video/best-ai-dance-motion-transfer-generators-2026), [Atlabs – Act‑Two vs Kling](https://www.atlabs.ai/blog/runway-act-two-vs-luma-modify-video), [musicapi.ai – best music API 2026](https://musicapi.ai/blog/best-ai-music-api-2026), [ElevenLabs Music v2](https://www.mindstudio.ai/blog/what-is-elevenlabs-music-v2), [Udio bez API](https://github.com/api-evangelist/udio), [Music Ally – Suno v6](https://musically.com/2026/09/09/suno-launches-its-v6-ai-music-models-heres-what-you-need-to-know/), [Digital Music News – Suno partner program](https://www.digitalmusicnews.com/2026/07/03/suno-is-opening-an-api-partner-program/)
 - Suno API – stav: [Music Business Worldwide](https://www.musicbusinessworldwide.com/suno-explores-developer-api-seeking-apps-that-unlock-experiences-generative-music-makes-possible-for-the-first-time/), [tunova.ai](https://tunova.ai/guides/is-there-an-official-suno-api), [AI/ML API blog – riziká neoficiálnych API](https://aimlapi.com/blog/the-suno-api-reality)
 - Lyria: [OpenRouter – Lyria 3 Pro](https://openrouter.ai/google/lyria-3-pro-preview), [cellcog.ai – Lyria 3.5](https://cellcog.ai/blog/lyria-3-5/), [invideo – Lyria prehľad](https://invideo.io/blog/lyria-ai-music-generator/)
 - Mureka / MiniMax / porovnanie práv: [Mureka API Platform](https://platform.mureka.ai/pricing), [apiframe – AI music API pricing](https://apiframe.ai/blog/ai-music-api-pricing-2026), [invideo – copyright porovnanie](https://invideo.io/blog/ai-music-copyright-comparison/), [fal – MiniMax Music](https://fal.ai/models/fal-ai/minimax-music)

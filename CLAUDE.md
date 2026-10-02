@@ -30,8 +30,15 @@ a **Stav**.
 - **MVP = 5 dlaždíc:** Pesnička na mieru 9,90 € · Narodeninová/meninová pesnička 5,90 € ·
   Oživ fotku 1,99 € (5 ks 7,99 €; oprava + vyfarbenie zadarmo) · Video blahoželanie 5,99 € ·
   Blahoželanie/básnička zadarmo.
-- Fáza 2: hovoriaca fotka, darčekové poukazy, QR pesnička / hudobná pohľadnica,
+- Fáza 2: **najprv zábavné videá s lip‑syncom** (rozprávajúce zvieratko, spievajúca fotka,
+  tancujúci dedko, „ty v scéne“, prerábka **vlastného** videa – research 3.8, právo 6.8),
+  potom hovoriaca fotka, darčekové poukazy, QR pesnička / hudobná pohľadnica,
   AR živá fotka (MindAR), tlač. Marketing až po spustení.
+- **Modely: kvalita na prvom mieste** (rozdiel pár centov nerieši). Aktuálny výber
+  (research kap. 12, 10/2026): oprava fotky MAI‑Image‑2.6 / Seedream 5.0 Pro,
+  oživenie a video MiniMax H3 / Gemini Omni Flash, hlas Eleven v4, lip‑sync VEED Fabric /
+  sync‑3, pohyb Kling 3.0 Motion Control, hudba podľa slepého testu (ElevenLabs Music v2 /
+  Lyria 3.5 / Mureka). Rebríčky (Artificial Analysis, Arena.ai) kontrolovať raz za štvrťrok.
 - **Nepoužívať neoficiálne Suno API.** Hudba: Lyria 3.5 / Mureka / ElevenLabs. Výber
   rozhodne slepý test slovenského spevu. Suno partner program – prihlásiť sa.
 - Nerobiť: klonovanie hlasu, úpravy tiel/nahota, celebrity/politici, huby/lieky z fotky.
@@ -50,7 +57,7 @@ odkazom, výsledok príde e‑mailom/SMS.
 ## Stav
 
 - [x] Research, prieskum konkurencie, postup po go‑live (docs 01, 02)
-- [ ] Fáza A: domény, testovacie účty (Google AI Studio, fal.ai, Mureka, ElevenLabs),
+- [ ] Fáza A: domény, testovacie účty (Google AI Studio, fal.ai, OpenRouter, Mureka, ElevenLabs),
       testovací skript + slepý test slovenských pesničiek a oživenia fotiek
 - [ ] Fáza B: založenie s.r.o.
 - [ ] Fáza F: vývoj MVP (ešte nezačatý – v repozitári je zatiaľ len dokumentácia)

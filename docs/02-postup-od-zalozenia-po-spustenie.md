@@ -15,7 +15,7 @@ Prešiel som celý research ešte raz. Toto sú závery, ktoré ovplyvňujú pos
 1. **Najväčšie riziko je kvalita slovenského spevu.** Pesnička na mieru je produkt s
    najväčšou maržou (konkurencia 20 – 45 €, náš náklad ~0,20 €). Keď AI nebude spievať
    zrozumiteľne po slovensky, padá hlavný zdroj príjmu. **Prvý test preto robíme ešte
-   pred založením firmy** (krok 1.2). Stojí do 30 € a 2 dni práce.
+   pred založením firmy** (krok 1.2). Stojí do 50 € a 2 dni práce.
 2. **Na začiatku nebyť platiteľom DPH.** Kým firma neprekročí obrat 50 000 € za 12 mesiacov,
    nemusí byť platiteľom DPH a predáva bez DPH. Pri pesničke za 9,90 € tak zostane
    ~9,30 € namiesto ~7,40 €. Povinná je len **registrácia podľa § 7a** (kvôli nákupu
@@ -36,7 +36,12 @@ Prešiel som celý research ešte raz. Toto sú závery, ktoré ovplyvňujú pos
    - Oživ fotku + oprava a vyfarbenie zadarmo (1,99 €, 5 ks za 7,99 €)
    - Video blahoželanie (5,99 €)
    - Blahoželanie / básnička (zadarmo, lákadlo)
-7. **Dizajn od prvého dňa viacjazyčný.** Texty budú v súboroch, preklad do CZ/HU/PL
+7. **Vždy najlepší model, nie najlacnejší.** Rozdiel je v centoch. Kontrola rebríčkov
+   (10/2026) ukázala lepšie modely, než aké boli v pôvodnom researchi: MAI‑Image‑2.6 /
+   Seedream 5.0 Pro na fotky, MiniMax H3 na video, Eleven v4 na hlas (research, kap. 12).
+8. **Fáza 2 začne zábavnými videami s lip‑syncom** (rozprávajúce zvieratko, spievajúca
+   fotka, tancujúci dedko). Prerábky len vlastných videí zákazníka (research, kap. 3.8 a 6.8).
+9. **Dizajn od prvého dňa viacjazyčný.** Texty budú v súboroch, preklad do CZ/HU/PL
    je neskôr len preklad, nie prerábanie.
 
 ---
@@ -56,17 +61,20 @@ Cieľ: nevyhodiť 5 000 € na firmu, ak AI nespieva dobre po slovensky.
   držiteľa u registrátora) alebo ich necháš na sebe a firme ich prenajmeš. ⚖️
 - **DNS zatiaľ nemeň**, nastavíme ho spolu v kroku 4.3.
 
-### 1.2 👤 + 🤖 Test kvality AI (rozpočet ~30 €, platíš súkromnou kartou)
+### 1.2 👤 + 🤖 Test kvality AI (rozpočet ~50 €, platíš súkromnou kartou)
 
 1. 👤 Založ si účty (na svoj e‑mail, neskôr ich prevedieme na firemný):
-   - [Google AI Studio](https://aistudio.google.com) – Lyria 3.5 (hudba), Nano Banana (fotky). Pridaj kartu (EÚ musí byť na platenom režime).
-   - [fal.ai](https://fal.ai) – video modely (Kling, Seedance, Hailuo). Nabi 10 USD.
+   - [Google AI Studio](https://aistudio.google.com) – Lyria 3.5 (hudba), Gemini Omni Flash (video), Gemini TTS. Pridaj kartu (EÚ musí byť na platenom režime).
+   - [fal.ai](https://fal.ai) – MiniMax H3, Seedance 2.0 (video), Seedream 5.0 Pro (fotky), neskôr lip‑sync. Nabi 20 USD.
+   - [OpenRouter](https://openrouter.ai) – MAI‑Image‑2.6 a GPT Image 2 (fotky) cez jeden účet. Nabi 10 USD.
    - [Mureka](https://platform.mureka.ai) – hudba. Najmenší balík.
-   - [ElevenLabs](https://elevenlabs.io) – hudba a hlas. Free alebo Starter (~5 USD).
+   - [ElevenLabs](https://elevenlabs.io) – Music v2 a hlas Eleven v4. Starter (~5 USD).
+   - Ktoré modely a prečo: research, kap. 12 (vyberáme najlepšie podľa rebríčkov, nie najlacnejšie).
 2. 🤖 Napíšem testovací skript. Vygeneruje:
    - 3 ľudovky (*Tancuj, tancuj*, *Kopala studienku*, *Na Kráľovej holi*) a
      3 pesničky na mieru (narodeniny 70, svadba, uspávanka), každú v 3 službách = 18 pesničiek;
-   - oživenie 10 tvojich starých rodinných fotiek v 3 video modeloch.
+   - opravu a oživenie 10 tvojich starých rodinných fotiek (3 modely na opravu, 3 na oživenie);
+   - slovenský hlas (Eleven v4 vs. Gemini TTS) na 3 krátkych textoch.
 3. 👤 Pustíš to 5 – 10 ľuďom 50+ (rodina, susedia) **naslepo** (bez názvu služby). Hodnotia:
    rozumiem textu? znie to pekne? dal by som za to 10 €?
 4. **Rozhodnutie:** keď aspoň jedna hudobná služba dostane od väčšiny „áno, rozumiem a
@@ -250,7 +258,8 @@ Pri každej službe vyplň fakturačné údaje firmy, aby faktúry chodili na s.
 | **Cloudflare** | DNS, ochrana, úložisko R2 | ~0 – 5 USD/mes. | karta |
 | **Stripe** | platby od zákazníkov | 1,5 % + 0,25 € za platbu (EHP karta) | strhne z platieb |
 | **Google Cloud / AI Studio** | Lyria (hudba), Nano Banana (fotky), Veo | podľa použitia, mesačná faktúra | karta |
-| **fal.ai** | video, oživenie, avatary | predplatený kredit, zapni auto‑dobíjanie (napr. 50 USD) | karta |
+| **fal.ai** | video (MiniMax H3, Seedance), fotky (Seedream 5.0 Pro), lip‑sync | predplatený kredit, zapni auto‑dobíjanie (napr. 50 USD) | karta |
+| **OpenRouter** alebo **Microsoft Foundry (Azure)** | MAI‑Image‑2.6 (oprava fotiek), GPT Image 2 | podľa použitia (~0,04 USD/fotka) | karta |
 | **ElevenLabs** / **Mureka** | hudba / hlas (podľa výsledku testu 1.2) | od ~5 – 22 USD/mes. | karta |
 | **Anthropic** (Claude API) alebo Gemini | texty, básničky, úprava textov piesní | centy za úlohu | karta |
 | **Resend** (alebo Brevo) | e‑maily „Vaša pesnička je hotová“ | zadarmo do ~3 000/mes., potom ~20 USD | karta |
@@ -428,7 +437,7 @@ Začni s nimi čo najskôr.
 | Položka | Suma |
 |---|---|
 | Domény (3×, 1. rok) | ~35 € |
-| Test AI (fáza A) | ~30 € |
+| Test AI (fáza A) | ~50 € |
 | Založenie s.r.o. (cesta A / B) | ~235 € / ~520 € |
 | Advokát – VOP, GDPR, súhlasy | ~300 – 800 € |
 | AI kredity na vývoj a betu | ~100 – 150 € |
@@ -462,7 +471,7 @@ Pri marži ~9 € na pesničke (ako neplatiteľ DPH) alebo ~1,10 – 1,50 € na
 ## 11. Čo od teba potrebujem teraz
 
 1. **Kúp domény** (krok 1.1).
-2. **Založ účty na test** (krok 1.2): Google AI Studio, fal.ai, Mureka, ElevenLabs.
+2. **Založ účty na test** (krok 1.2): Google AI Studio, fal.ai, OpenRouter, Mureka, ElevenLabs.
    Napíš mi, keď budú hotové. Ukážem ti, kam bezpečne vložiť kľúče.
 3. Pošli mi (alebo nahraj do repozitára do priečinka `test-fotky/`, ktorý nebude verejný)
    **5 – 10 starých rodinných fotiek** na test. Len so súhlasom rodiny.
