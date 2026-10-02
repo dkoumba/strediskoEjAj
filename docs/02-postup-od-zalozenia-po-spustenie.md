@@ -70,6 +70,14 @@ Nový notebook netreba. Stačí oddeliť **identitu**, nie hardvér:
 4. **Lokálny git na notebooku netreba.** Claude pracuje v cloude (Claude Code na webe)
    a zmeny posiela priamo na GitHub. Notebook potrebuješ len na prehliadač.
 5. **Správca hesiel** (Bitwarden zadarmo / 1Password) a **2FA** na každom účte projektu.
+6. **Firemné dáta nesťahovať na súkromný notebook.** Fotky a videá zákazníkov, objednávky
+   a logy zostávajú v cloude firmy (Supabase, R2, Stripe). Je to lepšie pre GDPR
+   (bezpečnosť osobných údajov) a pri prípadnom spore sa rieši cloud firmy, nie tvoj
+   súkromný počítač. ⚖️ Pozn.: v trestnom konaní môže polícia zaistiť akúkoľvek vec
+   dôležitú pre konanie bez ohľadu na to, či je súkromná alebo firemná; v civilnom spore
+   súd môže nariadiť predložiť konkrétne dokumenty. Ochranou je preto hlavne to, že na
+   notebooku nič firemné nie je, nie samotný druhý notebook. Dáta, ktoré sa môžu týkať
+   sporu, sa nikdy nesmú mazať.
 
 ### 1.1 👤 Kúp domény (hneď dnes, ~25 €/rok za obe)
 
