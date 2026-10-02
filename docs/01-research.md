@@ -557,6 +557,66 @@ S týmito opatreniami je pravdepodobnosť problému nízka a pri spore vieme pre
 sme urobili všetko rozumné. Nulové riziko však neexistuje → **advokát musí VOP pre
 smiešne videá skontrolovať pred spustením.**
 
+### 6.10 Môžeme žalovať Google / dodávateľa? Ako si spraviť rovnakú ochranu ako oni
+
+**Žalovať Google ani iného AI dodávateľa za zneužitie naším zákazníkom prakticky nemôžeme.
+Je to presne naopak:**
+- Podmienky Google APIs: firma, ktorá API používa, **bráni a odškodní Google** (vrátane
+  nákladov na právnikov) pri nárokoch tretích osôb, ktoré vzniknú zo zneužitia API
+  **nami alebo našimi koncovými používateľmi**, z porušenia podmienok a z obsahu, ktorý
+  do API pošleme. Ak by teda politik žaloval Google kvôli videu od nášho zákazníka,
+  Google môže náklady preniesť **na nás**.
+- Google síce dáva „odškodnenie“ pri platených AI službách, ale **len pri autorských
+  právach** (napr. výstup porušuje cudzí autorský zákon) a **neplatí**, keď zákazník
+  obsah vytvorí úmyselne na porušenie práv. Na deepfake politika sa nevzťahuje.
+- Ostatní dodávatelia (fal.ai, MiniMax, ElevenLabs…) majú bežne rovnakú logiku:
+  zodpovednosť za vstupy a použitie výstupov nesie zákazník (my), ich zodpovednosť je
+  obmedzená, typicky na sumu zaplatenú za posledné mesiace. ⚖️ (advokát nech prejde
+  konkrétne podmienky každého dodávateľa)
+
+**Prečo je Google chránený a ako to skopírujeme:**
+
+| Čo má Google | Čo spravíme my |
+|---|---|
+| Zmluva, kde za zneužitie zodpovedá ten, kto službu použil, a ten ho aj odškodní | **VOP:** zákazník zodpovedá za vstupy a za použitie výsledku a **nahradí nám škodu** (pokuty, náhrady, náklady na právnika), ak poruší pravidlá. ⚖️ Pri spotrebiteľoch musí byť napísané jasne a primerane, inak to súd môže zrušiť ako neprijateľnú podmienku |
+| Obmedzenie vlastnej zodpovednosti | **VOP:** naša zodpovednosť voči zákazníkovi obmedzená (napr. do výšky ceny objednávky) – v rozsahu, ktorý zákon pri spotrebiteľoch dovolí (úmysel a hrubú nedbanlivosť vylúčiť nemožno) ⚖️ |
+| Bezpečnostné filtre | filtre verejných osôb, kontrola textu, zákaz politikov (6.9) |
+| Používateľ je známy (účet, karta) | **Smiešne videá s ľuďmi len platené** (platba kartou = vieme, kto to je) a s overeným e‑mailom. Free skúška len pri zvieratkách |
+| Dôkazy o súhlase | ukladáme **kto, kedy, z akej IP, ktorú verziu VOP a ktorý text súhlasu** odklikol (bez dôkazu je súhlas na súde slabý) |
+| Rýchle odstránenie po nahlásení | tlačidlo „Nahlásiť zneužitie“, stiahnutie do 24 h, záznam o vybavení |
+| Obrovské firmy, právne oddelenie | **s.r.o.** (ty osobne ručíš len do výšky nesplateného vkladu – pri splatených 5 000 € tvoj súkromný majetok nie je v ohrození, okrem prípadov tvojho úmyselného protiprávneho konania) + **poistenie zodpovednosti** (pozri nižšie) |
+
+**Dôležité:** zmluva so zákazníkom **nezaväzuje poškodeného** (napr. politika). Ten môže
+stále žalovať nás. Zmluva nám dáva nárok potom **vymáhať škodu od zákazníka** (regres).
+Preto je kľúčové, aby bol zákazník identifikovateľný (platba kartou) a aby sme vedeli
+preukázať jeho súhlas.
+
+**„Čo keď si niečo nevšimnem?“** Nikto nemusí ručne kontrolovať každé video. Rozhoduje,
+či sme urobili **rozumné opatrenia** (pravidlá, filtre, označenie, nahlasovanie) a
+**či sme konali hneď, keď sme sa o probléme dozvedeli**. Kto má tieto veci nastavené
+a zdokumentované, je vo výrazne lepšej pozícii. ⚖️
+
+**Poistenie:** opýtať sa poisťovacieho makléra na **poistenie zodpovednosti za škodu
+pre IT/online služby** s krytím **mediálnych rizík a zásahu do osobnosti / ochrany
+údajov** (cyber + media liability). Cena rádovo stovky € ročne – overiť ponuky. Pri
+smiešnych videách odporúčam mať poistenie od spustenia.
+
+#### Zoznam súhlasov a potvrdení (všetky sa ukladajú ako dôkaz)
+
+| Kedy | Text (návrh, finálne advokát) | Povinné? |
+|---|---|---|
+| Každá objednávka | „Súhlasím s obchodnými podmienkami (verzia X) a beriem na vedomie informácie o ochrane osobných údajov.“ | áno |
+| Každá objednávka | „Žiadam o okamžité dodanie a beriem na vedomie, že tým strácam právo odstúpiť od zmluvy do 14 dní.“ | áno |
+| Nahratie fotky človeka | „Na fotke som ja, alebo mám súhlas zobrazených osôb, alebo ide o môjho zosnulého blízkeho. Nejde o verejne známu osobu (politik, celebrita, športovec…).“ | áno |
+| Smiešne videá s človekom | „Video nepoužijem na klamanie, zosmiešnenie ani poškodenie nikoho. Beriem na vedomie, že video je označené ako vytvorené AI a že za jeho použitie a zverejnenie zodpovedám ja. Ak pravidlá poruším, nahradím prevádzkovateľovi vzniknutú škodu.“ | áno |
+| Vlastný text do videa | „Text neobsahuje urážky, nepravdivé tvrdenia o skutočných osobách ani obsah, ktorý porušuje zákon.“ | áno |
+| Vek | „Mám viac ako 18 rokov.“ (pri registrácii) | áno |
+| Ukážka na webe | „Súhlasím, aby bol výsledok použitý ako ukážka. Súhlas môžem kedykoľvek odvolať.“ (+2 € kredit) | nie, dobrovoľné |
+| Marketingové e‑maily | „Chcem dostávať ponuky a novinky.“ | nie, dobrovoľné |
+
+Pravidlá: políčka **nesmú byť vopred zaškrtnuté**, text musí byť krátky a zrozumiteľný
+(50+), pri každom odkaz na plné znenie.
+
 ## 7. Doručenie výsledku („pošli to rovno mamke“)
 
 - Každý výsledok dostane **vlastnú stránku** `strediskoai.sk/d/xxxxxxx` (náhodný, neuhádnuteľný

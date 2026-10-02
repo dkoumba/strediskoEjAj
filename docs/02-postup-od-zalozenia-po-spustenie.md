@@ -308,6 +308,8 @@ fotkám ľudí a licenciám.
 | **Reklamačný poriadok** | ako reklamovať (e‑mail), lehoty, čo je vada pri AI výstupe |
 | **Ochrana osobných údajov (GDPR)** | kto je prevádzkovateľ, aké údaje, prečo, ako dlho (vstupné fotky zmazané do 24 h, výsledky 30 dní), **zoznam sprostredkovateľov** (Google, fal.ai, ElevenLabs, Stripe, Supabase, Vercel, Cloudflare, Resend…), **prenos mimo EÚ** (USA – EU‑US Data Privacy Framework), práva dotknutých osôb, kontakt |
 | **Súhlas na použitie ako ukážka** | samostatný, dobrovoľný, odvolateľný, s odmenou (napr. 2 € kredit) |
+| **Všetky súhlasy a potvrdenia** | úplný zoznam s návrhmi textov: research, kap. 6.10. Ukladať ako dôkaz: kto, kedy, IP, verzia VOP, text súhlasu |
+| **Zodpovednosť a odškodnenie** | zákazník zodpovedá za vstupy a použitie výsledku a nahradí nám škodu pri porušení pravidiel; obmedzenie našej zodpovednosti v rozsahu, ktorý zákon dovolí (research 6.9 – 6.10). **Advokát nech prejde aj podmienky AI dodávateľov** – my odškodňujeme ich, nie oni nás |
 | **Cookies** | lišta len ak používame neesenciálne cookies. Odporúčam analytiku bez cookies (Plausible / Umami), potom stačí informácia |
 | **Označovanie AI (AI Act čl. 50)** | text „Vytvorené pomocou umelej inteligencie“ na stránke výsledku, metadáta v súboroch, malý vodoznak vo videách/fotkách |
 | **Interne (nezverejňuje sa)** | záznamy o spracovateľských činnostiach (GDPR), **zmluvy o spracúvaní (DPA)** s dodávateľmi (väčšinou sa „podpisujú“ odsúhlasením v nastaveniach účtu, uložiť PDF) |
@@ -321,7 +323,9 @@ Voliteľné:
 - **Ochranná známka** „Stredisko AI / strediskoEjAj“ na [ÚPV SR](https://www.indprop.gov.sk).
   Poplatok rádovo stovky € (overiť aktuálny sadzobník), triedy 9, 41, 42. Odporúčam po
   overení, že projekt beží (do pár mesiacov), skôr ako ho niekto skopíruje.
-- **Poistenie zodpovednosti** za škodu: lacné, prebrať s poisťovňou.
+- **Poistenie zodpovednosti** za škodu pre IT/online služby s krytím mediálnych rizík a
+  zásahu do osobnosti (cyber + media liability). **Kvôli smiešnym videám odporúčam od
+  spustenia** – opýtať sa makléra, cena rádovo stovky € ročne (research 6.10).
 
 ---
 

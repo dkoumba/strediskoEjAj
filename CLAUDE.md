@@ -35,6 +35,12 @@ a **Stav**.
 - Smiešne videá: **zákaz politikov a známych osôb** (VOP + potvrdenie súhlasu + filter
   verejných osôb + kontrola textu + vodoznak AI + „Nahlásiť zneužitie“ + logy). Firma môže
   niesť zodpovednosť aj sama (research 6.9) – VOP musí skontrolovať advokát.
+- Dodávateľov (Google, fal…) žalovať nemôžeme – ich podmienky hovoria, že **my odškodňujeme
+  ich** za zneužitie našimi zákazníkmi. Rovnakú ochranu si spravíme sami (research 6.10):
+  VOP so zodpovednosťou a odškodnením zo strany zákazníka, všetky súhlasy ukladať ako dôkaz
+  (kto, kedy, IP, verzia VOP), smiešne videá s ľuďmi **len platené** (identifikovateľný
+  zákazník), free skúška len pri zvieratkách, s.r.o. + poistenie zodpovednosti
+  (cyber + media) od spustenia.
 - Fáza 2: „Ty v scéne“, „Prerob svoje video“ (len vlastné videá; research 3.8, 6.8),
   hovoriaca fotka, darčekové poukazy, QR pesnička / hudobná pohľadnica,
   AR živá fotka (MindAR), tlač. Marketing až po spustení.
