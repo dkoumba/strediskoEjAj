@@ -702,6 +702,14 @@ Pravidlá: políčka **nesmú byť vopred zaškrtnuté**, text musí byť krátk
    ako slovenská konkurencia, ale nie najlacnejší – a súťažiť **rýchlosťou (hotové hneď,
    nie za 1 – 3 dni), jednoduchosťou a tým, že je všetko na jednom mieste**.
 4. Telefonická podpora áno/nie (pre 50+ silný argument).
+5. **Názov (otvorené 10/2026):** zvažuje sa zmena „Stredisko AI“ → „centrumAI“.
+   - centrumAI: kratšie, zrozumiteľné aj v CZ/PL; ale všeobecné slovo → ťažko sa
+     registruje ako ochranná známka, horšie sa hľadá na Googli, a existujú podobné názvy:
+     *Centrum pre umelú inteligenciu* (AIslovakIA, Bratislava), *Národní centrum umělé
+     inteligence* (ČVUT), americký startup *Centrum‑AI*, plus známy portál a e‑mail *Centrum.sk*.
+   - Stredisko AI: dlhšie, ale výrazné, retro (pre 50+ sympatické), ľahšie chrániteľné.
+   - „ejaj“ ako hlavná doména mätie → nanajvýš presmerovanie.
+   - Pred rozhodnutím: overiť voľnosť domén na sk‑nic.sk a podobné ochranné známky na ÚPV SR.
 
 ## 11. Konkurencia a ich ceny (prieskum 10/2026)
 
