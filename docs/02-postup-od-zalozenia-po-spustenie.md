@@ -453,6 +453,12 @@ sledovať chyby a náklady. Potom marketing.
 
 ## 9. Časový plán (realisticky)
 
+> **Rozhodnutie (10/2026): najprv vývoj, s.r.o. paralelne neskôr.** Na test a programovanie
+> firma netreba (všetko beží v testovacom režime, platí sa súkromne, ide o malé sumy).
+> S.r.o. musí existovať až pred **prvou skutočnou platbou zákazníka** (ostrý Stripe, VOP s IČO,
+> § 7a, firemné účty u AI dodávateľov). Keďže založenie + banka + § 7a + aktivácia Stripe
+> trvá 2 – 4 týždne, **zakladať začneme, keď bude web zhruba z 2/3 hotový.**
+
 | Týždeň | 👤 Ty | 🤖 Ja | 👥 |
 |---|---|---|---|
 | 1 | domény, účty na test, hodnotitelia | testovací skript, výsledky testu | oslovenie účtovníka |

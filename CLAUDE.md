@@ -25,6 +25,8 @@ a **Stav**.
 ## Rozhodnutia (stav 2. 10. 2026)
 
 - Forma: **s.r.o.** (otvorené: sám/so spoločníkom; formulár vs. advokát).
+- **Poradie: najprv test AI a vývoj (bez firmy), s.r.o. zakladať, keď je web ~2/3 hotový** – musí
+  existovať pred prvou ostrou platbou zákazníka (postup 02, kap. 9).
 - **Názov otvorený:** „Stredisko AI“ vs. „centrumAI“ (research kap. 10, bod 5). „ejaj“ max. ako presmerovanie.
 - Na začiatku **neplatiteľ DPH**, len registrácia **§ 7a** pred prvým nákupom AI zo zahraničia.
 - eKasa netreba (len online platby vopred). AI služby platiť firemnou kartou (transakčná daň).
