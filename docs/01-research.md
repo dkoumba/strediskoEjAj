@@ -126,8 +126,109 @@ Toto je lacné (LLM stojí zlomky centu) a pre 50+ často **najužitočnejšie**
 - **Tlač na fyzický produkt** – fotka na plátne, hrnček, puzzle, kalendár, vytlačená
   knižka; cez slovenskú tlačiareň alebo print‑on‑demand (Printful/Gelato). 50+ chce mať
   fotku „v ruke“, marža na tlači býva vyššia ako na AI.
-- **QR kód na pohľadnicu** – vytlačená pohľadnica s QR, ktorý vedie na pesničku/video.
+- **QR kód na pohľadnicu** – vytlačená pohľadnica s QR, ktorý vedie na pesničku/video
+  (podrobne v kap. 3.7).
+- **Živá fotka (AR)** – vytlačená fotka, ktorá sa v mobile „rozhýbe“ (kap. 3.7).
 - **Balíček „Oslava“** = pesnička + video blahoželanie + pozvánka, za zvýhodnenú cenu.
+
+### 3.7 QR a AR – „papier, ktorý hrá“
+
+Dobrá správa: obe veci sú **technicky lacné** (náklad na sken je prakticky nulový) a
+skvele nadväzujú na to, čo už generujeme. Funguje to **bez aplikácie** – stačí fotoaparát
+v mobile a prehliadač (WebAR).
+
+#### a) QR pesnička / QR video (jednoduché, spoľahlivé – spustiť ako prvé)
+
+- Na pohľadnici, pozvánke, fotke, obale darčeka je QR kód → otvorí stránku výsledku:
+  veľké tlačidlo **▶ Prehrať**, pri pesničke **text veľkým písmom** (aj ako karaoke –
+  zvýrazňuje sa riadok, ktorý sa práve spieva), tlačidlo Stiahnuť.
+- QR generujeme **sami** (open‑source knižnica, zadarmo), vo vlastnej doméne
+  `strediskoai.sk/q/xxxx`, s vysokou korekciou chýb, aby sa dal doň vložiť aj logo.
+  **Nepoužívať cudzie „dynamické QR“ služby** – po skončení predplatného kód prestane fungovať.
+- Produkty:
+
+| Produkt | Ako | Cena (návrh) |
+|---|---|---|
+| QR k pesničke/videu ako PDF na vytlačenie (pohľadnica, visačka na darček) | digitálne, vytlačia si sami | +0,99 € (alebo zadarmo k objednávke) |
+| **Hudobná pohľadnica** – vytlačená a poslaná poštou priamo oslávencovi | tlač + obálka + poštovné | 4,99 – 6,99 € + poštovné |
+| Svadobná / jubilejná pozvánka s QR na pesničku alebo video | tlač po kusoch | podľa nákladu |
+| Fotka 10×15 s QR v bielom okraji | tlač | 2,99 € |
+
+- Doplnková možnosť: **NFC nálepka** (priloží sa mobil a pustí sa to) – 0,20 – 0,50 €/ks.
+  Pre 50+ je QR zrozumiteľnejšie, NFC len ako „wow“ doplnok.
+
+#### b) AR živá fotka („ako v Harrym Potterovi“)
+
+Princíp: zákazník si objedná **Oživ fotku**. Vytlačíme **pôvodnú (opravenú) fotku**
+a keď na ňu niekto namieri mobil, **priamo na papieri sa prehrá oživené video** –
+babka sa na fotke usmeje a zamáva. Rovnako to ide s pesničkou (fotka sa pohne a hrá
+k nej pesnička), s video blahoželaním na pohľadnici alebo so spomienkovým videom na
+fotke zo svadby.
+
+Ako to funguje technicky:
+
+1. Na fotke / v jej okraji je **QR kód** → otvorí našu AR stránku pre **túto konkrétnu fotku**
+   (vďaka tomu systém hľadá len jeden obrázok – je to spoľahlivejšie).
+2. Stránka požiada o kameru, zákazník namieri mobil na fotku, prehliadač ju rozpozná
+   (image tracking) a video „prilepí“ presne na ňu.
+3. **Záchranná brzda:** ak sa AR nepodarí (starý mobil, zlé svetlo), po pár sekundách
+   ukážeme veľké tlačidlo „Prehrať video“ a video sa pustí normálne na celej obrazovke.
+   Pre 50+ je to kľúčové – nesmie nastať situácia „nefunguje to“.
+
+Nástroje:
+
+| Možnosť | Cena | Poznámka |
+|---|---|---|
+| **MindAR** (open‑source, MIT licencia) | zadarmo | rozpoznávanie obrázkov v prehliadači (Android aj iPhone/Safari), beží na našom serveri, žiadne poplatky za sken; „odtlačok“ obrázka (.mind súbor) sa vygeneruje raz pri objednávke. **Odporúčam.** |
+| ZapWorks / Mattercraft, Blippar, ARLOOPA, Stories AR, Artivive | predplatné | hotové platformy, rýchly štart bez programovania, ale mesačné poplatky a závislosť na cudzej službe |
+| 8th Wall | – | **skončil** (prístup ukončený 28. 2. 2026) – je to dobrá ukážka, prečo nestavať na cudzej platforme |
+
+Na čo si dať pozor:
+
+- **Staré fotky majú málo detailov a kontrastu** → horšie sa rozpoznávajú. Keďže tlačíme
+  my, pridáme okolo fotky **ozdobný rámik s výrazným vzorom** (napr. ľudový ornament,
+  folklórna výšivka) – ten sa rozpoznáva výborne a zároveň je to pekný dizajn a naša značka.
+- Lesklý papier odráža svetlo → tlačiť na **matný** papier.
+- Rozmer aspoň 10×15 cm.
+- Zvuk: prehliadače nepustia video so zvukom samé od seba – vždy treba 1 ťuknutie
+  („Ťuknite a namierte na fotku“). S tým treba v návode počítať.
+- Kamera ide len cez **https** (to budeme mať aj tak).
+
+Produkty a ceny (návrh):
+
+| Produkt | Cena (návrh) |
+|---|---|
+| AR živá fotka – digitálne (PDF na vytlačenie doma / vo fotolabe) | +2,99 € k „Oživ fotku“ |
+| AR živá fotka 10×15 vytlačená a poslaná poštou | 7,99 – 9,99 € |
+| AR fotka na plátne / v rámiku (30×40) | 29 – 39 € |
+| AR pohľadnica s video blahoželaním | 6,99 € |
+| AR fotokniha / kalendár (každá strana „ožije“) | 29 – 49 € |
+
+Tlač: slovenský fotolab (odporúčam pre poštovné a rýchlosť) alebo print‑on‑demand
+s výrobou v EÚ (Gelato, Prodigi – majú API, pošlú priamo zákazníkovi).
+
+#### c) Pozor: vytlačený QR musí fungovať roky
+
+Pri digitálnom výsledku stačí uchovávať 30 dní, ale **vytlačená fotka visí na stene
+10 rokov** – keby kód prestal fungovať, je to sklamanie a zlá reklama.
+
+- Pri tlačených/QR/AR produktoch **garantovať uchovanie napr. 10 rokov** (zahrnúť do ceny).
+  Náklad je zanedbateľný: video 10 MB × 10 rokov na R2 ≈ 0,02 USD, sťahovanie zadarmo.
+- Ukladať len výsledné video a fotku (nie originály nahraté zákazníkom) – s mazaním
+  vstupov to nie je v rozpore.
+- Doménu `strediskoai.sk` platiť dopredu na viac rokov a mať pravidlo, že odkazy `/q/…`
+  sa nikdy nezrušia.
+- Zákazník si môže výsledok kedykoľvek stiahnuť a nechať zmazať (GDPR) – potom QR
+  zobrazí slušnú hlášku namiesto chyby.
+
+#### d) Ďalšie nápady na neskôr
+
+- **Spomienková stránka so QR** (napr. na pomník, do pamätnej knihy) – životopis, fotky,
+  oživená fotka, pesnička. Existujúci trh, citlivá téma, vyžaduje veľmi taktný prístup a
+  súhlas rodiny.
+- **Svadobná kniha hostí** – hostia naskenujú QR na stole a nahrajú pozdrav; z nich sa
+  urobí spomienkové video.
+- **Rodokmeň na plagáte**, kde každá fotka po naskenovaní ožije.
 
 ### 3.6 Čo vedome NEROBIŤ (aspoň nie na začiatku)
 
@@ -346,7 +447,7 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
 - SMS: slovenská SMS brána ~0,035 – 0,04 € / SMS (Notifea, smartSMS, VIPTel, Zoznam) –
   zarátať do ceny alebo 0,10 € príplatok.
 - WhatsApp/Messenger: tlačidlo „Zdieľať“ s odkazom (zadarmo, telefón to vyrieši sám).
-- **QR kód na vytlačenie** do pohľadnice.
+- **QR kód na vytlačenie** do pohľadnice, prípadne AR živá fotka (kap. 3.7).
 
 ### Úložisko
 
@@ -355,6 +456,7 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
   pozerané veľa ľuďmi stálo za prenos). Prvých 10 GB zadarmo.
 - Pieseň ~5 MB, video 10 s ~5 – 15 MB, fotka ~2 – 5 MB → 10 000 výstupov ≈ 50 – 100 GB.
   Pri mazaní po 30 dňoch je to zanedbateľný náklad.
+- Výnimka: výsledky k tlačeným QR/AR produktom držať dlhodobo (kap. 3.7 c).
 
 ---
 
@@ -396,6 +498,7 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
 
 **Fáza 2 – rast**
 - Darčekové poukazy, tlač (plátno, hrnček, pohľadnica s QR), hovoriaca fotka, spomienkové video.
+- QR pesnička / hudobná pohľadnica, potom AR živá fotka (MindAR) s tlačou a poštou.
 - Marketing: Facebook skupiny a reklamy na 50+, meninový kalendár („Zajtra má meniny Mária –
   darujte jej pesničku“), spolupráca s domovmi dôchodcov / Jednotou dôchodcov.
 
@@ -428,4 +531,5 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
 - Úložisko: [Cloudflare R2 pricing 2026](https://mecanik.dev/en/posts/cloudflare-r2-pricing-explained-real-costs-vs-s3-and-backblaze/)
 - SMS: [Notifea](https://notifea.com/sk/sms-gateway), [VIPTel](https://www.viptel.sk/sms-brana-hromadne-sms-cez-internet), [smartSMS](https://smartsms.sk/), [Zoznam SMS brána](https://smsbrana.zoznam.sk/)
 - AI Act: [Peterka Partners – čl. 50](https://blog.peterkapartners.com/article-50-of-the-ai-act-in-practice-transparency-of-ai-systems-content-labeling-and-deepfakes/), [EK – Code of Practice](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content), [CSA – odklad do 2. 12. 2026](https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-article50-watermarking-deadline/), [Gibson Dunn – Omnibus](https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/)
+- QR / AR: [MindAR (GitHub)](https://github.com/hiukim/mind-ar-js), [MindAR dokumentácia](https://hiukim.github.io/mind-ar-js-doc/), [Kivicube – 8th Wall shutdown](https://www.kivicube.com/post/augmented-reality-after-8th-wall-shutdown-your-2026-guide-to-the-right-webar-platform/), [ARLOOPA – 8th Wall končí](https://www.arloopa.com/blog/8th-wall-is-shutting-down-where-to-move-your-webar-projects), [Stories AR – AR pictures](https://stories-ar.com/en/ar-pictures), [webar-pamphlet – príklad „naskenuj a prehrá video“](https://github.com/arcanesoftai/webar-pamphlet)
 - Ľudové piesne a autorské právo: [omediach.com – šéf SOZA o ľudových piesňach](https://www.omediach.com/radio/1234-sef-soza-sa-vyjadril-za-ktore-ludove-piesne-sa-plati-a-za-ktore-nie), [muzicka.sk – autorské práva a folklór](https://www.muzicka.sk/blog/posts/autorske-prava-a-folklorna-hudba/), [Autorský zákon 185/2015 (SOZA)](https://moja.soza.sk/cms/content/files/Autorsky_zakon_185_2015.pdf)
