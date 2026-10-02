@@ -39,7 +39,11 @@
    dá kedykoľvek odvolať. Riešenie v kap. 6.
 9. **AI Act (EÚ) platí od 2. 8. 2026** – AI obsah musí byť označený (strojovo čitateľne
    + pri realistických ľuďoch aj viditeľne). Nie je to problém, len to treba mať v návrhu od začiatku.
-10. **Začať malo:** 6 – 8 dlaždíc (MVP), potom pridávať. Zoznam ~35 nápadov je v kap. 3.
+10. **Začať malo:** 5 dlaždíc (MVP, kap. 9), potom pridávať. Zoznam ~35 nápadov je v kap. 3.
+
+> **Aktuálne rozhodnutia a presný postup** (založenie s.r.o., účtovníctvo, dane, účty,
+> go‑live) sú v [02-postup-od-zalozenia-po-spustenie.md](02-postup-od-zalozenia-po-spustenie.md).
+> Pri rozpore platí novší dokument 02.
 
 ---
 
@@ -343,9 +347,18 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
   Toto treba mať od začiatku vyriešené, inak hrozia pokuty.
 - Pri predaji spotrebiteľom v iných krajinách EÚ (CZ, PL, HU…) sa po prekročení 10 000 €
   ročne platí DPH krajiny zákazníka – rieši sa cez **OSS**.
-- Platby kartou cez internet **nespadajú pod eKasu**.
+- Platby kartou cez internet vopred (platobná brána) **nespadajú pod eKasu** ani podľa
+  nového zákona o evidencii tržieb 384/2025 (platí od 1. 1. 2026).
 - Faktúry/doklady zákazníkom – Stripe vie posielať potvrdenia; na slovenské doklady
   napr. SuperFaktúra / iDoklad (majú API).
+- **Rozhodnutie (10/2026):** na začiatku **nebyť platiteľom DPH** (povinná registrácia
+  až pri obrate 50 000 € za 12 mesiacov), registrovať sa len podľa **§ 7a** – a to
+  **pred** prvým nákupom AI služby firmou.
+- Daň z príjmov s.r.o. 10 % (výnosy do 100 000 €), daňová licencia 340 € (v prvom
+  zdaňovacom období sa neplatí), dividendy 7 – 10 %.
+- **Transakčná daň:** s.r.o. platí 0,4 % z odchádzajúcich prevodov (max 40 €);
+  platby kartou sú oslobodené (2 €/rok za kartu) → AI služby platiť **firemnou kartou**.
+- Podrobnosti: dokument 02, kap. 3.
 
 ---
 
@@ -491,20 +504,24 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
 **Fáza 0 – overenie (1 – 2 týždne)**
 1. Slepý test slovenských pesničiek (Lyria / Mureka / ElevenLabs), prihláška do Suno partner programu.
 2. Test oživenia a opravy 20 skutočných starých rodinných fotiek na 3 – 4 video modeloch.
-3. Konzultácia s účtovníkom (s.r.o. vs. živnosť, DPH § 7a) a s advokátom (VOP, GDPR).
-4. Registrácia domén, firemné účty: Stripe, fal.ai, Google Cloud, ElevenLabs.
+3. Konzultácia s účtovníkom (DPH § 7a) a s advokátom (VOP, GDPR).
+4. Registrácia domén, založenie s.r.o. (od 17. 8. 2026 nový zákon o OR – zjednodušene
+   cez štátny formulár, alebo cez advokáta), firemné účty: Stripe, fal.ai, Google Cloud, ElevenLabs.
+   Presný postup: dokument 02.
 
 **Fáza 1 – MVP (4 – 6 týždňov)**
-- 6 dlaždíc: Oživ fotku, Oprav/vyfarbi fotku, Pesnička na mieru, Narodeninová pesnička,
-  Video blahoželanie, Blahoželanie/básnička (zadarmo).
+- 5 dlaždíc: Pesnička na mieru (9,90 €), Narodeninová/meninová pesnička (5,90 €),
+  Oživ fotku + oprava a vyfarbenie zadarmo (1,99 €, 5 ks 7,99 €), Video blahoželanie
+  (5,99 €), Blahoželanie/básnička (zadarmo).
 - Peňaženka + priama platba, darčekové poslanie e‑mailom/SMS, stránka výsledku, mazanie po 30 dňoch.
 - Slovenčina, mobil na prvom mieste (väčšina 50+ príde z Facebooku na mobile).
 
 **Fáza 2 – rast**
 - Darčekové poukazy, tlač (plátno, hrnček, pohľadnica s QR), hovoriaca fotka, spomienkové video.
 - QR pesnička / hudobná pohľadnica, potom AR živá fotka (MindAR) s tlačou a poštou.
-- Marketing: Facebook skupiny a reklamy na 50+, meninový kalendár („Zajtra má meniny Mária –
-  darujte jej pesničku“), spolupráca s domovmi dôchodcov / Jednotou dôchodcov.
+- Marketing (až po spustení): Facebook skupiny a reklamy na 50+, meninový kalendár
+  („Zajtra má meniny Mária – darujte jej pesničku“), Zľavomat/Slevomat, spolupráca
+  s domovmi dôchodcov / Jednotou dôchodcov.
 
 **Fáza 3 – ďalšie jazyky**
 - Čeština (najmenej práce, rovnaký trh a návyky), potom maďarčina, poľština, ukrajinčina,
@@ -514,7 +531,8 @@ Pri fotke za 0,99 € by Stripe zobral 0,26 € – preto **neúčtovať po jedn
 
 ## 10. Otvorené otázky na rozhodnutie
 
-1. Firma: živnosť alebo s.r.o.? (pri GDPR a deepfake rizikách skôr s.r.o. – ručenie)
+1. ~~Firma: živnosť alebo s.r.o.?~~ → **rozhodnuté: s.r.o.** Otvorené: sám alebo so
+   spoločníkom; založenie cez štátny formulár (~235 €) alebo cez advokáta (~520 €).
 2. Ktorý poskytovateľ pesničiek – rozhodne slepý test.
 3. Cenová stratégia: po prieskume (kap. 11) odporúčam byť **zhruba o polovicu lacnejší**
    ako slovenská konkurencia, ale nie najlacnejší – a súťažiť **rýchlosťou (hotové hneď,
